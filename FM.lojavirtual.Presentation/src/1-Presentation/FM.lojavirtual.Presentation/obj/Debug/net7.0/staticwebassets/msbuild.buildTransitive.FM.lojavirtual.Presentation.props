@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\buildMultiTargeting\FM.lojavirtual.Presentation.props" />
+</Project>

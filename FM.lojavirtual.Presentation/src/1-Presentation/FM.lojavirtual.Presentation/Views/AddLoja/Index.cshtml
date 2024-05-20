@@ -1,0 +1,60 @@
+﻿@model FM.lojavirtual.Application.ViewModels.LojaViewModel
+
+@{
+    ViewData["Title"] = "AddLoja";
+}
+
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="AddLoja">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Id" class="control-label"></label>
+                <input asp-for="Id" class="form-control" />
+                <span asp-validation-for="Id" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Nome" class="control-label"></label>
+                <input asp-for="Nome" class="form-control" />
+                <span asp-validation-for="Nome" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="DataCriacao" class="control-label"></label>
+                <input asp-for="DataCriacao" class="form-control" />
+                <span asp-validation-for="DataCriacao" class="text-danger"></span>
+            </div>
+            <div class="form-group form-check">
+                <label class="form-check-label">
+                    <input class="form-check-input" asp-for="Ativo" /> @Html.DisplayNameFor(model => model.Ativo)
+                </label>
+            </div>
+            <div class="form-group">
+                <input type="button" onclick="Salvar()" value="Adicionar" class="btn btn-primary mt-2" />
+                <a class="btn btn-warning mt-2" asp-action="Home">Voltar <i class="fa fa-trash"></i></a>
+            </div>
+        </form>
+    </div>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}
+
+<script>
+    function Salvar() {
+
+        let id = document.querySelector('#Id');
+        let nome = document.querySelector('#Nome').value;
+        
+        console.log('nome:', nome);
+
+        $.ajax({
+            type: 'POST',
+            url:'@Url.Action("Salvar", "AddLoja")',
+            data: { nome }
+
+        })
+    }
+</script>

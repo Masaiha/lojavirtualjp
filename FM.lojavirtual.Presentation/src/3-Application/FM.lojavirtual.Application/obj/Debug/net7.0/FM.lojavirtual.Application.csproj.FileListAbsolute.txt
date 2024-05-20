@@ -1,0 +1,12 @@
+C:\Users\Masa\Documents\1-Projetos\lojavirtualjp\FM.lojavirtual.Presentation\src\3-Application\FM.lojavirtual.Application\bin\Debug\net7.0\FM.lojavirtual.Application.deps.json
+C:\Users\Masa\Documents\1-Projetos\lojavirtualjp\FM.lojavirtual.Presentation\src\3-Application\FM.lojavirtual.Application\bin\Debug\net7.0\FM.lojavirtual.Application.dll
+C:\Users\Masa\Documents\1-Projetos\lojavirtualjp\FM.lojavirtual.Presentation\src\3-Application\FM.lojavirtual.Application\bin\Debug\net7.0\FM.lojavirtual.Application.pdb
+C:\Users\Masa\Documents\1-Projetos\lojavirtualjp\FM.lojavirtual.Presentation\src\3-Application\FM.lojavirtual.Application\obj\Debug\net7.0\FM.lojavirtual.Application.csproj.AssemblyReference.cache
+C:\Users\Masa\Documents\1-Projetos\lojavirtualjp\FM.lojavirtual.Presentation\src\3-Application\FM.lojavirtual.Application\obj\Debug\net7.0\FM.lojavirtual.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Masa\Documents\1-Projetos\lojavirtualjp\FM.lojavirtual.Presentation\src\3-Application\FM.lojavirtual.Application\obj\Debug\net7.0\FM.lojavirtual.Application.AssemblyInfoInputs.cache
+C:\Users\Masa\Documents\1-Projetos\lojavirtualjp\FM.lojavirtual.Presentation\src\3-Application\FM.lojavirtual.Application\obj\Debug\net7.0\FM.lojavirtual.Application.AssemblyInfo.cs
+C:\Users\Masa\Documents\1-Projetos\lojavirtualjp\FM.lojavirtual.Presentation\src\3-Application\FM.lojavirtual.Application\obj\Debug\net7.0\FM.lojavirtual.Application.csproj.CoreCompileInputs.cache
+C:\Users\Masa\Documents\1-Projetos\lojavirtualjp\FM.lojavirtual.Presentation\src\3-Application\FM.lojavirtual.Application\obj\Debug\net7.0\FM.lojavirtual.Application.dll
+C:\Users\Masa\Documents\1-Projetos\lojavirtualjp\FM.lojavirtual.Presentation\src\3-Application\FM.lojavirtual.Application\obj\Debug\net7.0\refint\FM.lojavirtual.Application.dll
+C:\Users\Masa\Documents\1-Projetos\lojavirtualjp\FM.lojavirtual.Presentation\src\3-Application\FM.lojavirtual.Application\obj\Debug\net7.0\FM.lojavirtual.Application.pdb
+C:\Users\Masa\Documents\1-Projetos\lojavirtualjp\FM.lojavirtual.Presentation\src\3-Application\FM.lojavirtual.Application\obj\Debug\net7.0\ref\FM.lojavirtual.Application.dll
