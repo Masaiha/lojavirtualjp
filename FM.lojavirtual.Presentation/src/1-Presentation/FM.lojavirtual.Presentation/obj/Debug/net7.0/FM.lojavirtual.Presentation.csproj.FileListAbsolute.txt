@@ -270,3 +270,5 @@ C:\Users\Masa\Documents\1-Projetos\lojavirtualjp\FM.lojavirtual.Presentation\src
 C:\Users\Masa\Documents\1-Projetos\lojavirtualjp\FM.lojavirtual.Presentation\src\1-Presentation\FM.lojavirtual.Presentation\bin\Debug\net7.0\5.2-FM.lojavirtual.Infra.Data.pdb
 C:\Users\Masa\Documents\1-Projetos\lojavirtualjp\FM.lojavirtual.Presentation\src\1-Presentation\FM.lojavirtual.Presentation\bin\Debug\net7.0\FM.lojavirtual.Domain.pdb
 C:\Users\Masa\Documents\1-Projetos\lojavirtualjp\FM.lojavirtual.Presentation\src\1-Presentation\FM.lojavirtual.Presentation\obj\Debug\net7.0\FM.lojavirtual.Presentation.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\Masa\Documents\1-Projetos\lojavirtualjp\FM.lojavirtual.Presentation\src\1-Presentation\FM.lojavirtual.Presentation\bin\Debug\net7.0\AutoMapper.dll
+C:\Users\Masa\Documents\1-Projetos\lojavirtualjp\FM.lojavirtual.Presentation\src\1-Presentation\FM.lojavirtual.Presentation\bin\Debug\net7.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll

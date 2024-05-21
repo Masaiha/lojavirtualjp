@@ -1,8 +1,12 @@
 
 using _5._2_FM.lojavirtual.Infra.Data.Repository;
+using FM.lojavirtual.Application.AutoMapper;
+using FM.lojavirtual.Application.Interfaces;
+using FM.lojavirtual.Application.Servicos;
+using FM.lojavirtual.Domain.Interfaces.Domain;
 using FM.lojavirtual.Domain.Interfaces.Repository;
+using FM.lojavirtual.Domain.Servicos;
 using FM.lojavirtual.WebApi.Configurations;
-using Microsoft.Extensions.Configuration;
 
 namespace FM.lojavirtual.WebApi
 {
@@ -13,11 +17,11 @@ namespace FM.lojavirtual.WebApi
         {
             var builder = WebApplication.CreateBuilder(args);
 
+            builder.Services.AddAutoMapper(typeof(Program));
+            builder.Services.AddAutoMapperConfigurations();
 
             // Add services to the container.
-            
-            builder.Services.AddScoped<ILojaRepository, LojaRepository>();
-            builder.Services.AddDbConnectionString(builder.Configuration);
+            builder.Services.AddDependencyInjections(builder.Configuration);
 
             builder.Services.AddControllers();
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle

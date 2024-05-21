@@ -14,6 +14,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\..\3-Application\FM.lojavirtual.Application\FM.lojavirtual.Application.csproj" />
     <ProjectReference Include="..\..\4-Domain\FM.lojavirtual.Domain\FM.lojavirtual.Domain.csproj" />
     <ProjectReference Include="..\..\5-Infra\5.2-FM.lojavirtual.Infra.Data\5.2-FM.lojavirtual.Infra.Data.csproj" />
     <ProjectReference Include="..\..\5-Infra\5.3-FM.lojavirtual.Infra.WebApi\5.3-FM.lojavirtual.Infra.WebApi.csproj" />
