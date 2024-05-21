@@ -1,0 +1,12 @@
+C:\Users\Masa\Documents\1-Projetos\lojavirtualjp\FM.lojavirtual.Presentation\src\4-Domain\FM.lojavirtual.Domain\bin\Debug\net7.0\FM.lojavirtual.Domain.deps.json
+C:\Users\Masa\Documents\1-Projetos\lojavirtualjp\FM.lojavirtual.Presentation\src\4-Domain\FM.lojavirtual.Domain\bin\Debug\net7.0\FM.lojavirtual.Domain.dll
+C:\Users\Masa\Documents\1-Projetos\lojavirtualjp\FM.lojavirtual.Presentation\src\4-Domain\FM.lojavirtual.Domain\bin\Debug\net7.0\FM.lojavirtual.Domain.pdb
+C:\Users\Masa\Documents\1-Projetos\lojavirtualjp\FM.lojavirtual.Presentation\src\4-Domain\FM.lojavirtual.Domain\obj\Debug\net7.0\FM.lojavirtual.Domain.csproj.AssemblyReference.cache
+C:\Users\Masa\Documents\1-Projetos\lojavirtualjp\FM.lojavirtual.Presentation\src\4-Domain\FM.lojavirtual.Domain\obj\Debug\net7.0\FM.lojavirtual.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Masa\Documents\1-Projetos\lojavirtualjp\FM.lojavirtual.Presentation\src\4-Domain\FM.lojavirtual.Domain\obj\Debug\net7.0\FM.lojavirtual.Domain.AssemblyInfoInputs.cache
+C:\Users\Masa\Documents\1-Projetos\lojavirtualjp\FM.lojavirtual.Presentation\src\4-Domain\FM.lojavirtual.Domain\obj\Debug\net7.0\FM.lojavirtual.Domain.AssemblyInfo.cs
+C:\Users\Masa\Documents\1-Projetos\lojavirtualjp\FM.lojavirtual.Presentation\src\4-Domain\FM.lojavirtual.Domain\obj\Debug\net7.0\FM.lojavirtual.Domain.csproj.CoreCompileInputs.cache
+C:\Users\Masa\Documents\1-Projetos\lojavirtualjp\FM.lojavirtual.Presentation\src\4-Domain\FM.lojavirtual.Domain\obj\Debug\net7.0\FM.lojavirtual.Domain.dll
+C:\Users\Masa\Documents\1-Projetos\lojavirtualjp\FM.lojavirtual.Presentation\src\4-Domain\FM.lojavirtual.Domain\obj\Debug\net7.0\refint\FM.lojavirtual.Domain.dll
+C:\Users\Masa\Documents\1-Projetos\lojavirtualjp\FM.lojavirtual.Presentation\src\4-Domain\FM.lojavirtual.Domain\obj\Debug\net7.0\FM.lojavirtual.Domain.pdb
+C:\Users\Masa\Documents\1-Projetos\lojavirtualjp\FM.lojavirtual.Presentation\src\4-Domain\FM.lojavirtual.Domain\obj\Debug\net7.0\ref\FM.lojavirtual.Domain.dll

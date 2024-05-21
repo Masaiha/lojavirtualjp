@@ -1,3 +1,5 @@
+using FM.lojavirtual.Domain.Entidades;
+using FM.lojavirtual.Domain.Interfaces.Repository;
 using Microsoft.AspNetCore.Mvc;
 
 namespace FM.lojavirtual.WebApi.Controllers
@@ -12,10 +14,12 @@ namespace FM.lojavirtual.WebApi.Controllers
     };
 
         private readonly ILogger<WeatherForecastController> _logger;
+        private readonly ILojaRepository _lojaReposiroty;
 
-        public WeatherForecastController(ILogger<WeatherForecastController> logger)
+        public WeatherForecastController(ILogger<WeatherForecastController> logger, ILojaRepository lojaRepository)
         {
             _logger = logger;
+            _lojaReposiroty = lojaRepository;
         }
 
         [HttpGet(Name = "GetWeatherForecast")]
@@ -28,6 +32,15 @@ namespace FM.lojavirtual.WebApi.Controllers
                 Summary = Summaries[Random.Shared.Next(Summaries.Length)]
             })
             .ToArray();
+        }
+
+        [HttpGet("ListarLojas")]
+        public IActionResult ListarLojas()
+        {
+
+            var teste = _lojaReposiroty.ListarLojas();
+
+            return Ok();
         }
     }
 }

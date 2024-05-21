@@ -1,0 +1,17 @@
+C:\Users\Masa\Documents\1-Projetos\lojavirtualjp\FM.lojavirtual.Presentation\src\5-Infra\5.2-FM.lojavirtual.Infra.Data\bin\Debug\net7.0\5.2-FM.lojavirtual.Infra.Data.deps.json
+C:\Users\Masa\Documents\1-Projetos\lojavirtualjp\FM.lojavirtual.Presentation\src\5-Infra\5.2-FM.lojavirtual.Infra.Data\bin\Debug\net7.0\5.2-FM.lojavirtual.Infra.Data.runtimeconfig.json
+C:\Users\Masa\Documents\1-Projetos\lojavirtualjp\FM.lojavirtual.Presentation\src\5-Infra\5.2-FM.lojavirtual.Infra.Data\bin\Debug\net7.0\5.2-FM.lojavirtual.Infra.Data.dll
+C:\Users\Masa\Documents\1-Projetos\lojavirtualjp\FM.lojavirtual.Presentation\src\5-Infra\5.2-FM.lojavirtual.Infra.Data\bin\Debug\net7.0\5.2-FM.lojavirtual.Infra.Data.pdb
+C:\Users\Masa\Documents\1-Projetos\lojavirtualjp\FM.lojavirtual.Presentation\src\5-Infra\5.2-FM.lojavirtual.Infra.Data\bin\Debug\net7.0\FM.lojavirtual.Domain.dll
+C:\Users\Masa\Documents\1-Projetos\lojavirtualjp\FM.lojavirtual.Presentation\src\5-Infra\5.2-FM.lojavirtual.Infra.Data\bin\Debug\net7.0\FM.lojavirtual.Domain.pdb
+C:\Users\Masa\Documents\1-Projetos\lojavirtualjp\FM.lojavirtual.Presentation\src\5-Infra\5.2-FM.lojavirtual.Infra.Data\obj\Debug\net7.0\5.2-FM.lojavirtual.Infra.Data.csproj.AssemblyReference.cache
+C:\Users\Masa\Documents\1-Projetos\lojavirtualjp\FM.lojavirtual.Presentation\src\5-Infra\5.2-FM.lojavirtual.Infra.Data\obj\Debug\net7.0\5.2-FM.lojavirtual.Infra.Data.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Masa\Documents\1-Projetos\lojavirtualjp\FM.lojavirtual.Presentation\src\5-Infra\5.2-FM.lojavirtual.Infra.Data\obj\Debug\net7.0\5.2-FM.lojavirtual.Infra.Data.AssemblyInfoInputs.cache
+C:\Users\Masa\Documents\1-Projetos\lojavirtualjp\FM.lojavirtual.Presentation\src\5-Infra\5.2-FM.lojavirtual.Infra.Data\obj\Debug\net7.0\5.2-FM.lojavirtual.Infra.Data.AssemblyInfo.cs
+C:\Users\Masa\Documents\1-Projetos\lojavirtualjp\FM.lojavirtual.Presentation\src\5-Infra\5.2-FM.lojavirtual.Infra.Data\obj\Debug\net7.0\5.2-FM.lojavirtual.Infra.Data.csproj.CoreCompileInputs.cache
+C:\Users\Masa\Documents\1-Projetos\lojavirtualjp\FM.lojavirtual.Presentation\src\5-Infra\5.2-FM.lojavirtual.Infra.Data\obj\Debug\net7.0\5.2-FM.lojavirtual.Infra.Data.csproj.CopyComplete
+C:\Users\Masa\Documents\1-Projetos\lojavirtualjp\FM.lojavirtual.Presentation\src\5-Infra\5.2-FM.lojavirtual.Infra.Data\obj\Debug\net7.0\5.2-FM.lojavirtual.Infra.Data.dll
+C:\Users\Masa\Documents\1-Projetos\lojavirtualjp\FM.lojavirtual.Presentation\src\5-Infra\5.2-FM.lojavirtual.Infra.Data\obj\Debug\net7.0\refint\5.2-FM.lojavirtual.Infra.Data.dll
+C:\Users\Masa\Documents\1-Projetos\lojavirtualjp\FM.lojavirtual.Presentation\src\5-Infra\5.2-FM.lojavirtual.Infra.Data\obj\Debug\net7.0\5.2-FM.lojavirtual.Infra.Data.pdb
+C:\Users\Masa\Documents\1-Projetos\lojavirtualjp\FM.lojavirtual.Presentation\src\5-Infra\5.2-FM.lojavirtual.Infra.Data\obj\Debug\net7.0\5.2-FM.lojavirtual.Infra.Data.genruntimeconfig.cache
+C:\Users\Masa\Documents\1-Projetos\lojavirtualjp\FM.lojavirtual.Presentation\src\5-Infra\5.2-FM.lojavirtual.Infra.Data\obj\Debug\net7.0\ref\5.2-FM.lojavirtual.Infra.Data.dll
