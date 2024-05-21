@@ -1,11 +1,23 @@
 {
   "Version": 1,
-  "Hash": "swAvDrzJkbrksnBAAgeq78ql0sh8b4RGR2EghcRzOt4=",
+  "Hash": "TIi8yWL9oYTXN38Q76sUbTQFv/gbrakOb4k9nYW0Uuk=",
   "Source": "FM.lojavirtual.Presentation",
   "BasePath": "_content/FM.lojavirtual.Presentation",
   "Mode": "Default",
   "ManifestType": "Build",
-  "ReferencedProjectsConfiguration": [],
+  "ReferencedProjectsConfiguration": [
+    {
+      "Identity": "C:\\Users\\Masa\\Documents\\1-Projetos\\lojavirtualjp\\FM.lojavirtual.Presentation\\src\\2-WebApi\\FM.lojavirtual.WebApi\\FM.lojavirtual.WebApi.csproj",
+      "Version": 2,
+      "Source": "FM.lojavirtual.WebApi",
+      "GetPublishAssetsTargets": "ComputeReferencedStaticWebAssetsPublishManifest;GetCurrentProjectPublishStaticWebAssetItems",
+      "AdditionalPublishProperties": "Configuration=Debug;Platform=AnyCPU",
+      "AdditionalPublishPropertiesToRemove": "WebPublishProfileFile;TargetFramework",
+      "GetBuildAssetsTargets": "GetCurrentProjectBuildStaticWebAssetItems",
+      "AdditionalBuildProperties": "Configuration=Debug;Platform=AnyCPU",
+      "AdditionalBuildPropertiesToRemove": "WebPublishProfileFile;TargetFramework"
+    }
+  ],
   "DiscoveryPatterns": [
     {
       "Name": "FM.lojavirtual.Presentation\\wwwroot",

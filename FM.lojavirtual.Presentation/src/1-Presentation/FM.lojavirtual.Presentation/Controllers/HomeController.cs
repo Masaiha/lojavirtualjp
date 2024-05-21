@@ -1,6 +1,8 @@
-﻿using FM.lojavirtual.Presentation.Models;
+﻿using _5._3_FM.lojavirtual.Infra.WebApi;
+using FM.lojavirtual.Presentation.Models;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
+using System.Threading;
 
 namespace FM.lojavirtual.Presentation.Controllers
 {
@@ -8,13 +10,18 @@ namespace FM.lojavirtual.Presentation.Controllers
     {
         private readonly ILogger<HomeController> _logger;
 
-        public HomeController(ILogger<HomeController> logger)
+        private readonly LojaServicoWebApi _lojaWebApi;
+
+        public HomeController(ILogger<HomeController> logger, LojaServicoWebApi lojaWebApi)
         {
             _logger = logger;
+            _lojaWebApi = lojaWebApi;
         }
 
-        public IActionResult Index()
+        public async Task<IActionResult> Index(CancellationToken cancellationToken)
         {
+            var teste1 = await _lojaWebApi.ListarNomeLojas(cancellationToken);
+
             return View();
         }
 
@@ -28,5 +35,7 @@ namespace FM.lojavirtual.Presentation.Controllers
         {
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
         }
+
+        
     }
 }

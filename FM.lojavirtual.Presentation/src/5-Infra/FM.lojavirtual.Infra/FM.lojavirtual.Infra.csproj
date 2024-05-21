@@ -11,4 +11,8 @@
     <Folder Include="Servicos\" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\..\4-Domain\FM.lojavirtual.Domain\FM.lojavirtual.Domain.csproj" />
+  </ItemGroup>
+
 </Project>

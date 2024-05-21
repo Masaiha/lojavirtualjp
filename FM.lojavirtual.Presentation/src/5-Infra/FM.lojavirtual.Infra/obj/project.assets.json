@@ -1,11 +1,30 @@
 {
   "version": 3,
   "targets": {
-    "net7.0": {}
+    "net7.0": {
+      "FM.lojavirtual.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "compile": {
+          "bin/placeholder/FM.lojavirtual.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/FM.lojavirtual.Domain.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "FM.lojavirtual.Domain/1.0.0": {
+      "type": "project",
+      "path": "../../4-Domain/FM.lojavirtual.Domain/FM.lojavirtual.Domain.csproj",
+      "msbuildProject": "../../4-Domain/FM.lojavirtual.Domain/FM.lojavirtual.Domain.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    "net7.0": []
+    "net7.0": [
+      "FM.lojavirtual.Domain >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\Masa\\.nuget\\packages\\": {},
@@ -39,7 +58,11 @@
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\Masa\\Documents\\1-Projetos\\lojavirtualjp\\FM.lojavirtual.Presentation\\src\\4-Domain\\FM.lojavirtual.Domain\\FM.lojavirtual.Domain.csproj": {
+              "projectPath": "C:\\Users\\Masa\\Documents\\1-Projetos\\lojavirtualjp\\FM.lojavirtual.Presentation\\src\\4-Domain\\FM.lojavirtual.Domain\\FM.lojavirtual.Domain.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

@@ -1,4 +1,3 @@
-using FM.lojavirtual.Domain.Entidades;
 using FM.lojavirtual.Domain.Interfaces.Repository;
 using Microsoft.AspNetCore.Mvc;
 
@@ -10,8 +9,8 @@ namespace FM.lojavirtual.WebApi.Controllers
     {
         private static readonly string[] Summaries = new[]
         {
-        "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
-    };
+            "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
+        };
 
         private readonly ILogger<WeatherForecastController> _logger;
         private readonly ILojaRepository _lojaReposiroty;
@@ -37,10 +36,16 @@ namespace FM.lojavirtual.WebApi.Controllers
         [HttpGet("ListarLojas")]
         public IActionResult ListarLojas()
         {
+            try
+            {
+                var teste = _lojaReposiroty.ListarLojas();
 
-            var teste = _lojaReposiroty.ListarLojas();
-
-            return Ok();
+                return Ok(teste);
+            }
+            catch (Exception)
+            {
+                return BadRequest("Ops, algo deu errado!");
+            }
         }
     }
 }

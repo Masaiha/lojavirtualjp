@@ -11,7 +11,9 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\..\2-WebApi\FM.lojavirtual.WebApi\FM.lojavirtual.WebApi.csproj" />
     <ProjectReference Include="..\..\3-Application\FM.lojavirtual.Application\FM.lojavirtual.Application.csproj" />
+    <ProjectReference Include="..\..\5-Infra\5.3-FM.lojavirtual.Infra.WebApi\5.3-FM.lojavirtual.Infra.WebApi.csproj" />
   </ItemGroup>
 
 </Project>

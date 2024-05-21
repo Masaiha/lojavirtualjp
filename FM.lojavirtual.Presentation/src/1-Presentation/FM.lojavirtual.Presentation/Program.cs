@@ -1,3 +1,8 @@
+using _5._3_FM.lojavirtual.Infra.WebApi;
+using _5._3_FM.lojavirtual.Infra.WebApi.Interfaces;
+using _5._3_FM.lojavirtual.Infra.WebApi.Servicos;
+using FM.lojavirtual.Domain.Entidades.AppSettings;
+
 namespace FM.lojavirtual.Presentation
 {
     public class Program
@@ -8,6 +13,14 @@ namespace FM.lojavirtual.Presentation
 
             // Add services to the container.
             builder.Services.AddControllersWithViews();
+
+            builder.Services.Configure<AppSettingsUi>(builder.Configuration);
+
+            builder.Services.AddScoped<IHttpGenericCall, HttpGenericCall>();
+            builder.Services.AddScoped<IBaseHttpClient, BaseHttpClient>();
+            builder.Services.AddScoped<AppSettingsUi>();
+
+            builder.Services.AddScoped<LojaServicoWebApi>();
 
             var app = builder.Build();
 

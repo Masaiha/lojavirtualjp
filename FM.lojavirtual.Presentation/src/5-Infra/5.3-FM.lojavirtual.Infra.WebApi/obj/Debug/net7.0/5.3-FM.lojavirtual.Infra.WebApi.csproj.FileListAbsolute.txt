@@ -1,0 +1,15 @@
+C:\Users\Masa\Documents\1-Projetos\lojavirtualjp\FM.lojavirtual.Presentation\src\5-Infra\5.3-FM.lojavirtual.Infra.WebApi\bin\Debug\net7.0\5.3-FM.lojavirtual.Infra.WebApi.deps.json
+C:\Users\Masa\Documents\1-Projetos\lojavirtualjp\FM.lojavirtual.Presentation\src\5-Infra\5.3-FM.lojavirtual.Infra.WebApi\bin\Debug\net7.0\5.3-FM.lojavirtual.Infra.WebApi.dll
+C:\Users\Masa\Documents\1-Projetos\lojavirtualjp\FM.lojavirtual.Presentation\src\5-Infra\5.3-FM.lojavirtual.Infra.WebApi\bin\Debug\net7.0\5.3-FM.lojavirtual.Infra.WebApi.pdb
+C:\Users\Masa\Documents\1-Projetos\lojavirtualjp\FM.lojavirtual.Presentation\src\5-Infra\5.3-FM.lojavirtual.Infra.WebApi\bin\Debug\net7.0\FM.lojavirtual.Domain.dll
+C:\Users\Masa\Documents\1-Projetos\lojavirtualjp\FM.lojavirtual.Presentation\src\5-Infra\5.3-FM.lojavirtual.Infra.WebApi\bin\Debug\net7.0\FM.lojavirtual.Domain.pdb
+C:\Users\Masa\Documents\1-Projetos\lojavirtualjp\FM.lojavirtual.Presentation\src\5-Infra\5.3-FM.lojavirtual.Infra.WebApi\obj\Debug\net7.0\5.3-FM.lojavirtual.Infra.WebApi.csproj.AssemblyReference.cache
+C:\Users\Masa\Documents\1-Projetos\lojavirtualjp\FM.lojavirtual.Presentation\src\5-Infra\5.3-FM.lojavirtual.Infra.WebApi\obj\Debug\net7.0\5.3-FM.lojavirtual.Infra.WebApi.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Masa\Documents\1-Projetos\lojavirtualjp\FM.lojavirtual.Presentation\src\5-Infra\5.3-FM.lojavirtual.Infra.WebApi\obj\Debug\net7.0\5.3-FM.lojavirtual.Infra.WebApi.AssemblyInfoInputs.cache
+C:\Users\Masa\Documents\1-Projetos\lojavirtualjp\FM.lojavirtual.Presentation\src\5-Infra\5.3-FM.lojavirtual.Infra.WebApi\obj\Debug\net7.0\5.3-FM.lojavirtual.Infra.WebApi.AssemblyInfo.cs
+C:\Users\Masa\Documents\1-Projetos\lojavirtualjp\FM.lojavirtual.Presentation\src\5-Infra\5.3-FM.lojavirtual.Infra.WebApi\obj\Debug\net7.0\5.3-FM.lojavirtual.Infra.WebApi.csproj.CoreCompileInputs.cache
+C:\Users\Masa\Documents\1-Projetos\lojavirtualjp\FM.lojavirtual.Presentation\src\5-Infra\5.3-FM.lojavirtual.Infra.WebApi\obj\Debug\net7.0\5.3-FM.lojavirtual.Infra.WebApi.csproj.CopyComplete
+C:\Users\Masa\Documents\1-Projetos\lojavirtualjp\FM.lojavirtual.Presentation\src\5-Infra\5.3-FM.lojavirtual.Infra.WebApi\obj\Debug\net7.0\5.3-FM.lojavirtual.Infra.WebApi.dll
+C:\Users\Masa\Documents\1-Projetos\lojavirtualjp\FM.lojavirtual.Presentation\src\5-Infra\5.3-FM.lojavirtual.Infra.WebApi\obj\Debug\net7.0\refint\5.3-FM.lojavirtual.Infra.WebApi.dll
+C:\Users\Masa\Documents\1-Projetos\lojavirtualjp\FM.lojavirtual.Presentation\src\5-Infra\5.3-FM.lojavirtual.Infra.WebApi\obj\Debug\net7.0\5.3-FM.lojavirtual.Infra.WebApi.pdb
+C:\Users\Masa\Documents\1-Projetos\lojavirtualjp\FM.lojavirtual.Presentation\src\5-Infra\5.3-FM.lojavirtual.Infra.WebApi\obj\Debug\net7.0\ref\5.3-FM.lojavirtual.Infra.WebApi.dll
