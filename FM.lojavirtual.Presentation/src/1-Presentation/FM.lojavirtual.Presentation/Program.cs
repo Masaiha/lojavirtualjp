@@ -15,10 +15,10 @@ namespace FM.lojavirtual.Presentation
             builder.Services.AddControllersWithViews();
 
             builder.Services.Configure<AppSettingsUi>(builder.Configuration);
+            builder.Services.AddScoped<AppSettingsUi>();
 
             builder.Services.AddScoped<IHttpGenericCall, HttpGenericCall>();
             builder.Services.AddScoped<IBaseHttpClient, BaseHttpClient>();
-            builder.Services.AddScoped<AppSettingsUi>();
 
             builder.Services.AddScoped<LojaServicoWebApi>();
 

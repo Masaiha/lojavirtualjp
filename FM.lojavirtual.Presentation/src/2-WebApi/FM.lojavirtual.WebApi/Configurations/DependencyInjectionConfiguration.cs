@@ -11,11 +11,22 @@ namespace FM.lojavirtual.WebApi.Configurations
     {
         public static IServiceCollection AddDependencyInjections(this IServiceCollection services, IConfiguration configuration)
         {
-            services.AddScoped<ILojaRepository, LojaRepository>();
             services.AddDbConnectionString(configuration);
+
+
+            ///////////////////////////  AppService //////////////////////////////////
             services.AddScoped<IUsuarioAppService, UsuarioAppService>();
+            services.AddScoped<ILoginAppService, LoginAppService>();
+
+            /////////////////////////////  pService //////////////////////////////////
             services.AddScoped<IUsuarioService, UsuarioService>();
+
+
+            ///////////////////////////  Repository //////////////////////////////////
             services.AddScoped<IUsuarioRepository, UsuarioRepository>();
+            services.AddScoped<ILojaRepository, LojaRepository>();
+            services.AddScoped<ILoginRepository, LoginRepository>();
+
 
 
             return services;

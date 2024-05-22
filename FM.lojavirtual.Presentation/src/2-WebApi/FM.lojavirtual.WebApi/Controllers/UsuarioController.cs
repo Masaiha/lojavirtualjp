@@ -1,11 +1,14 @@
 ﻿using FM.lojavirtual.Application.Interfaces;
 using FM.lojavirtual.Application.ViewModels;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace FM.lojavirtual.WebApi.Controllers
 {
+    [ApiController]
+    [Authorize]
     [Route("api/usuarios")]
-    public class UsuarioController : Controller
+    public class UsuarioController : ControllerBase
     {
 		private readonly IUsuarioAppService _appService;
 

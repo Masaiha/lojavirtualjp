@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "OGGxEizZOqMb2MM8SKpogxi9B3WMs3sz498h3yBLsY/dJd7deQYKVkkMWQuhgtA3bjpBCa4DtuaKEz0hZqJsBw==",
+  "dgSpecHash": "ZIwDcI5Hc/iNngGU3/CJ9shdUnJI4SwAojpPNjCl8GaDqCooDKaJjSUb4eWHQe727JD88RciqTshRE3ifAhhBw==",
   "success": true,
   "projectFilePath": "C:\\Users\\Masa\\Documents\\1-Projetos\\lojavirtualjp\\FM.lojavirtual.Presentation\\src\\1-Presentation\\FM.lojavirtual.Presentation\\FM.lojavirtual.Presentation.csproj",
   "expectedPackageFiles": [
@@ -59,6 +59,7 @@
     "C:\\Users\\Masa\\.nuget\\packages\\humanizer.core.zh-cn\\2.14.1\\humanizer.core.zh-cn.2.14.1.nupkg.sha512",
     "C:\\Users\\Masa\\.nuget\\packages\\humanizer.core.zh-hans\\2.14.1\\humanizer.core.zh-hans.2.14.1.nupkg.sha512",
     "C:\\Users\\Masa\\.nuget\\packages\\humanizer.core.zh-hant\\2.14.1\\humanizer.core.zh-hant.2.14.1.nupkg.sha512",
+    "C:\\Users\\Masa\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\7.0.19\\microsoft.aspnetcore.authentication.jwtbearer.7.0.19.nupkg.sha512",
     "C:\\Users\\Masa\\.nuget\\packages\\microsoft.aspnetcore.openapi\\7.0.4\\microsoft.aspnetcore.openapi.7.0.4.nupkg.sha512",
     "C:\\Users\\Masa\\.nuget\\packages\\microsoft.aspnetcore.razor.language\\6.0.11\\microsoft.aspnetcore.razor.language.6.0.11.nupkg.sha512",
     "C:\\Users\\Masa\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\6.0.0\\microsoft.bcl.asyncinterfaces.6.0.0.nupkg.sha512",
@@ -94,6 +95,7 @@
     "C:\\Users\\Masa\\.nuget\\packages\\microsoft.extensions.logging\\7.0.0\\microsoft.extensions.logging.7.0.0.nupkg.sha512",
     "C:\\Users\\Masa\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\7.0.0\\microsoft.extensions.logging.abstractions.7.0.0.nupkg.sha512",
     "C:\\Users\\Masa\\.nuget\\packages\\microsoft.extensions.options\\8.0.2\\microsoft.extensions.options.8.0.2.nupkg.sha512",
+    "C:\\Users\\Masa\\.nuget\\packages\\microsoft.extensions.platformabstractions\\1.1.0\\microsoft.extensions.platformabstractions.1.1.0.nupkg.sha512",
     "C:\\Users\\Masa\\.nuget\\packages\\microsoft.extensions.primitives\\8.0.0\\microsoft.extensions.primitives.8.0.0.nupkg.sha512",
     "C:\\Users\\Masa\\.nuget\\packages\\microsoft.identity.client\\4.56.0\\microsoft.identity.client.4.56.0.nupkg.sha512",
     "C:\\Users\\Masa\\.nuget\\packages\\microsoft.identity.client.extensions.msal\\4.56.0\\microsoft.identity.client.extensions.msal.4.56.0.nupkg.sha512",

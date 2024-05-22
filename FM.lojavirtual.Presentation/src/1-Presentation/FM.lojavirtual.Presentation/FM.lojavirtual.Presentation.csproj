@@ -16,4 +16,8 @@
     <ProjectReference Include="..\..\5-Infra\5.3-FM.lojavirtual.Infra.WebApi\5.3-FM.lojavirtual.Infra.WebApi.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Views\Login\" />
+  </ItemGroup>
+
 </Project>

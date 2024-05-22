@@ -1,11 +1,5 @@
-
-using _5._2_FM.lojavirtual.Infra.Data.Repository;
 using FM.lojavirtual.Application.AutoMapper;
-using FM.lojavirtual.Application.Interfaces;
-using FM.lojavirtual.Application.Servicos;
-using FM.lojavirtual.Domain.Interfaces.Domain;
-using FM.lojavirtual.Domain.Interfaces.Repository;
-using FM.lojavirtual.Domain.Servicos;
+using FM.lojavirtual.Domain.Entidades.AppSettings;
 using FM.lojavirtual.WebApi.Configurations;
 
 namespace FM.lojavirtual.WebApi
@@ -17,6 +11,12 @@ namespace FM.lojavirtual.WebApi
         {
             var builder = WebApplication.CreateBuilder(args);
 
+            builder.Services.AddJwtConfiguration(builder.Configuration);
+            builder.Services.AddSwaggerConfig();
+
+            builder.Services.Configure<AppSettingsApi>(builder.Configuration);
+            builder.Services.AddScoped<AppSettingsApi>();
+
             builder.Services.AddAutoMapper(typeof(Program));
             builder.Services.AddAutoMapperConfigurations();
 
@@ -24,16 +24,12 @@ namespace FM.lojavirtual.WebApi
             builder.Services.AddDependencyInjections(builder.Configuration);
 
             builder.Services.AddControllers();
-            // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
+            
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
 
-
-            
             var app = builder.Build();
             
-
-            // Configure the HTTP request pipeline.
             if (app.Environment.IsDevelopment())
             {
                 app.UseSwagger();
@@ -41,12 +37,8 @@ namespace FM.lojavirtual.WebApi
             }
 
             app.UseHttpsRedirection();
-
             app.UseAuthorization();
-
-
             app.MapControllers();
-
             app.Run();
         }
     }

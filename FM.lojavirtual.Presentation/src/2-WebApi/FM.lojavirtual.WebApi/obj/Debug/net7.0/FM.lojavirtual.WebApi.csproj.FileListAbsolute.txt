@@ -84,3 +84,5 @@ C:\Users\Masa\Documents\1-Projetos\lojavirtualjp\FM.lojavirtual.Presentation\src
 C:\Users\Masa\Documents\1-Projetos\lojavirtualjp\FM.lojavirtual.Presentation\src\2-WebApi\FM.lojavirtual.WebApi\obj\Debug\net7.0\FM.lojavirtual.WebApi.pdb
 C:\Users\Masa\Documents\1-Projetos\lojavirtualjp\FM.lojavirtual.Presentation\src\2-WebApi\FM.lojavirtual.WebApi\obj\Debug\net7.0\FM.lojavirtual.WebApi.genruntimeconfig.cache
 C:\Users\Masa\Documents\1-Projetos\lojavirtualjp\FM.lojavirtual.Presentation\src\2-WebApi\FM.lojavirtual.WebApi\obj\Debug\net7.0\ref\FM.lojavirtual.WebApi.dll
+C:\Users\Masa\Documents\1-Projetos\lojavirtualjp\FM.lojavirtual.Presentation\src\2-WebApi\FM.lojavirtual.WebApi\bin\Debug\net7.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\Masa\Documents\1-Projetos\lojavirtualjp\FM.lojavirtual.Presentation\src\2-WebApi\FM.lojavirtual.WebApi\bin\Debug\net7.0\Microsoft.Extensions.PlatformAbstractions.dll
