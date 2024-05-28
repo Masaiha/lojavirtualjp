@@ -1,7 +1,8 @@
-using _5._3_FM.lojavirtual.Infra.WebApi;
-using _5._3_FM.lojavirtual.Infra.WebApi.Interfaces;
-using _5._3_FM.lojavirtual.Infra.WebApi.Servicos;
 using FM.lojavirtual.Domain.Entidades.AppSettings;
+using FM.lojavirtual.Presentation.Configurations;
+using Microsoft.AspNetCore.Authentication.Cookies;
+using Microsoft.AspNetCore.Localization;
+using System.Globalization;
 
 namespace FM.lojavirtual.Presentation
 {
@@ -17,12 +18,11 @@ namespace FM.lojavirtual.Presentation
             builder.Services.Configure<AppSettingsUi>(builder.Configuration);
             builder.Services.AddScoped<AppSettingsUi>();
 
-            builder.Services.AddScoped<IHttpGenericCall, HttpGenericCall>();
-            builder.Services.AddScoped<IBaseHttpClient, BaseHttpClient>();
-
-            builder.Services.AddScoped<LojaServicoWebApi>();
+            builder.Services.AddDependencyInjection();
 
             var app = builder.Build();
+
+           
 
             // Configure the HTTP request pipeline.
             if (!app.Environment.IsDevelopment())
@@ -34,14 +34,38 @@ namespace FM.lojavirtual.Presentation
 
             app.UseHttpsRedirection();
             app.UseStaticFiles();
+            app.UseSession();
+
+            var culturas = new List<CultureInfo>
+            {
+                new CultureInfo("pt-BR"),
+                new CultureInfo("es-AR"),
+                new CultureInfo("es-ES"),
+                new CultureInfo("es-MX"),
+                new CultureInfo("de-DE"),
+                new CultureInfo("en-US")
+            };
+
+            var opcoesCultura = new RequestLocalizationOptions
+            {
+                DefaultRequestCulture = new RequestCulture("pt-BR"),
+                SupportedCultures = culturas,
+                SupportedUICultures = culturas
+            };
+
+            app.UseRequestLocalization(opcoesCultura);
+
+            var cookieProvider = opcoesCultura.RequestCultureProviders.OfType<CookieRequestCultureProvider>().First();
+            cookieProvider.CookieName = CookieRequestCultureProvider.DefaultCookieName;
 
             app.UseRouting();
 
+            app.UseAuthentication();
             app.UseAuthorization();
 
             app.MapControllerRoute(
                 name: "default",
-                pattern: "{controller=Home}/{action=Index}/{id?}");
+                pattern: "{controller=Login}/{action=Index}/{id?}");
 
             app.Run();
         }

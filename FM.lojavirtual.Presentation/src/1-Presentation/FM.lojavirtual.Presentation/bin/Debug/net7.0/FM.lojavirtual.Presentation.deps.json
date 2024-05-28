@@ -2602,6 +2602,7 @@
       },
       "5.3-FM.lojavirtual.Infra.WebApi/1.0.0": {
         "dependencies": {
+          "FM.lojavirtual.Application": "1.0.0",
           "FM.lojavirtual.Domain": "1.0.0",
           "Microsoft.Extensions.Options": "8.0.2",
           "Newtonsoft.Json": "13.0.3"

@@ -353,6 +353,9 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
+              "C:\\Users\\Masa\\Documents\\1-Projetos\\lojavirtualjp\\FM.lojavirtual.Presentation\\src\\3-Application\\FM.lojavirtual.Application\\FM.lojavirtual.Application.csproj": {
+                "projectPath": "C:\\Users\\Masa\\Documents\\1-Projetos\\lojavirtualjp\\FM.lojavirtual.Presentation\\src\\3-Application\\FM.lojavirtual.Application\\FM.lojavirtual.Application.csproj"
+              },
               "C:\\Users\\Masa\\Documents\\1-Projetos\\lojavirtualjp\\FM.lojavirtual.Presentation\\src\\4-Domain\\FM.lojavirtual.Domain\\FM.lojavirtual.Domain.csproj": {
                 "projectPath": "C:\\Users\\Masa\\Documents\\1-Projetos\\lojavirtualjp\\FM.lojavirtual.Presentation\\src\\4-Domain\\FM.lojavirtual.Domain\\FM.lojavirtual.Domain.csproj"
               }

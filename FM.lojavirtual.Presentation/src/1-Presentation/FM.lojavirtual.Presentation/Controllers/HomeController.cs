@@ -1,20 +1,21 @@
 ﻿using _5._3_FM.lojavirtual.Infra.WebApi;
+using FM.lojavirtual.Application.AutoMapper;
+using FM.lojavirtual.Presentation.Extensions;
 using FM.lojavirtual.Presentation.Models;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
-using System.Threading;
+using System.Security.Claims;
 
 namespace FM.lojavirtual.Presentation.Controllers
 {
     public class HomeController : Controller
     {
-        private readonly ILogger<HomeController> _logger;
-
         private readonly LojaServicoWebApi _lojaWebApi;
+        private readonly IHttpContextAccessor _accessor;
 
-        public HomeController(ILogger<HomeController> logger, LojaServicoWebApi lojaWebApi)
+        public HomeController(LojaServicoWebApi lojaWebApi, IHttpContextAccessor accessor)
         {
-            _logger = logger;
+            _accessor = accessor;
             _lojaWebApi = lojaWebApi;
         }
 
@@ -22,7 +23,15 @@ namespace FM.lojavirtual.Presentation.Controllers
         {
             var teste1 = await _lojaWebApi.ListarNomeLojas(cancellationToken);
 
+            //var teste = ObterClaims();
+            //var user = _accessor.HttpContext.User.GetUser();
+
             return View();
+        }
+
+        public IEnumerable<Claim> ObterClaims()
+        {
+            return _accessor.HttpContext?.User.Claims ?? throw new Exception("Ops, Ocorreu um erro ao salvar dados na Claim.");
         }
 
         public IActionResult Privacy()
@@ -34,8 +43,6 @@ namespace FM.lojavirtual.Presentation.Controllers
         public IActionResult Error()
         {
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
-        }
-
-        
+        }   
     }
 }

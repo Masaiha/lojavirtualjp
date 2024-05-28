@@ -1,0 +1,100 @@
+﻿@model FM.lojavirtual.Application.ViewModels.UsuarioViewModel;
+
+@{
+    Layout = null;
+}
+
+<head>
+    <title>FM -  Login</title>
+    <link href="~/css/site.css" rel="stylesheet" />
+    
+    <link href="~/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <link href="~/css/customfm.css" rel="stylesheet" />
+</head>
+
+<body class="bg-gradient-light">
+    @using (Html.BeginForm("Logar", "Login", FormMethod.Post))
+    {
+        @Html.AntiForgeryToken()
+
+        <div class="container">
+            <!-- Outer Row -->
+            <div class="row justify-content-center">
+                <div class="col-xl-10 col-lg-12 col-md-9">
+                    <div class="card o-hidden border-0 shadow-lg my-5">
+                        <div class="card-body p-0">
+                            <!-- Nested Row within Card Body -->
+                            <div class="row">
+                                <div id="ImageLoginRandom" 
+                                    class="col-lg-6 d-none d-lg-block" 
+                                    style="background-repeat: no-repeat; background-position: center; background-size: cover; align-content: center;padding-left: 4%;">
+                                    <img src="~/imagens/login.jpg" style="max-width: 28em;" />
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="p-5">
+                                        <div class="text-center">
+                                            <img src="~/Imagens/logo_fundo_branco.jpg" height="40" alt="FM" />
+                                        </div>
+
+                                        @if (!string.IsNullOrEmpty(ViewBag.MensagemErro))
+                                        {
+                                            <div class="alert alert-danger alert-dismissible fade show mt-1" role="alert">
+                                                @ViewBag.MensagemErro
+                                                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                                    <span aria-hidden="true">&times;</span>
+                                                </button>
+                                            </div>
+                                        }
+
+                                        <div class="form-group">
+                                            @Html.LabelFor(model => model.Login)
+                                            @Html.TextBoxFor(model => model.Login, new { @class = "form-control" })
+                                            @Html.ValidationMessageFor(model => model.Login, "", new { @class = "invalid-feedback text-danger" })
+                                        </div>
+                                        <br />
+                                        <div class="form-group">
+                                            @Html.LabelFor(model => model.Senha)
+                                            @Html.PasswordFor(model => model.Senha, new { @class = "form-control" })
+                                            @Html.ValidationMessageFor(model => model.Senha, "", new { @class = "invalid-feedback text-danger" })
+                                        </div>
+                                        <br />
+                                        <button id="btnLogin" type="submit" class="btn btn-primary">Logar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer class="page-footer align-text-bottom blue">
+            <div class="footer-copyright text-center py-3">
+                Copyright © FM-JP @DateTime.Now.Year.ToString()
+            </div>
+        </footer>
+
+    }
+    <script type="text/javascript">
+        $(document).ready(function () {
+            if (document.getElementById("page-top") != null) {
+                window.location.href = "@Url.Action("Index", "Login")";
+            }
+
+            var settings = {
+                validClass: "is-valid-disabled",
+                errorClass: "is-invalid"
+            };
+            // override jQuery validator settings
+            $.validator.setDefaults(settings);
+            // override jQuery unobtrusive validator settings
+            $.validator.unobtrusive.options = settings;
+
+            var dir = '@Url.Content("~/Imagens/")';
+            var randomCount = Math.floor(Math.random() * 4); @*Número randômico de 0 até 10*@
+                    var images = ["1.png", "2.png", "3.png", "4.png"];
+            $("#ImageLoginRandom").css("background-image", "url('" + dir + images[randomCount] + "')");
+        });
+    </script>
+
+</body>

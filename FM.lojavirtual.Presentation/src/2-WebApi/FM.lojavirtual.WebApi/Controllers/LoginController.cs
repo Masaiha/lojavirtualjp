@@ -46,7 +46,6 @@ namespace FM.lojavirtual.WebApi.Controllers
             }
         }
 
-
         private string CreateToken(UsuarioViewModel usuario)
         {
             //Set issued at date

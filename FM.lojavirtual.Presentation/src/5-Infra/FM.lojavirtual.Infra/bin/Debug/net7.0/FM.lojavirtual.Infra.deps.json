@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v7.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v7.0": {
+      "FM.lojavirtual.Infra/1.0.0": {
+        "dependencies": {
+          "FM.lojavirtual.Domain": "1.0.0"
+        },
+        "runtime": {
+          "FM.lojavirtual.Infra.dll": {}
+        }
+      },
+      "FM.lojavirtual.Domain/1.0.0": {
+        "runtime": {
+          "FM.lojavirtual.Domain.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "FM.lojavirtual.Infra/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "FM.lojavirtual.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

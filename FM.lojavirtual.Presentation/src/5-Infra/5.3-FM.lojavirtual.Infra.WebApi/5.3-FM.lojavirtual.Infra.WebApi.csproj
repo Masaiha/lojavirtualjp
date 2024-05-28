@@ -13,6 +13,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\..\3-Application\FM.lojavirtual.Application\FM.lojavirtual.Application.csproj" />
     <ProjectReference Include="..\..\4-Domain\FM.lojavirtual.Domain\FM.lojavirtual.Domain.csproj" />
   </ItemGroup>
 

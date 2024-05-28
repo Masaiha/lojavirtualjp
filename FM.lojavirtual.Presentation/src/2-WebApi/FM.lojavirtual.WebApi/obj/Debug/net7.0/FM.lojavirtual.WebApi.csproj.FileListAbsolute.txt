@@ -10,6 +10,7 @@ C:\Users\Masa\Documents\1-Projetos\lojavirtualjp\FM.lojavirtual.Presentation\src
 C:\Users\Masa\Documents\1-Projetos\lojavirtualjp\FM.lojavirtual.Presentation\src\2-WebApi\FM.lojavirtual.WebApi\bin\Debug\net7.0\Azure.Core.dll
 C:\Users\Masa\Documents\1-Projetos\lojavirtualjp\FM.lojavirtual.Presentation\src\2-WebApi\FM.lojavirtual.WebApi\bin\Debug\net7.0\Azure.Identity.dll
 C:\Users\Masa\Documents\1-Projetos\lojavirtualjp\FM.lojavirtual.Presentation\src\2-WebApi\FM.lojavirtual.WebApi\bin\Debug\net7.0\Dapper.dll
+C:\Users\Masa\Documents\1-Projetos\lojavirtualjp\FM.lojavirtual.Presentation\src\2-WebApi\FM.lojavirtual.WebApi\bin\Debug\net7.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
 C:\Users\Masa\Documents\1-Projetos\lojavirtualjp\FM.lojavirtual.Presentation\src\2-WebApi\FM.lojavirtual.WebApi\bin\Debug\net7.0\Microsoft.AspNetCore.OpenApi.dll
 C:\Users\Masa\Documents\1-Projetos\lojavirtualjp\FM.lojavirtual.Presentation\src\2-WebApi\FM.lojavirtual.WebApi\bin\Debug\net7.0\Microsoft.Bcl.AsyncInterfaces.dll
 C:\Users\Masa\Documents\1-Projetos\lojavirtualjp\FM.lojavirtual.Presentation\src\2-WebApi\FM.lojavirtual.WebApi\bin\Debug\net7.0\Microsoft.Data.SqlClient.dll
@@ -19,6 +20,7 @@ C:\Users\Masa\Documents\1-Projetos\lojavirtualjp\FM.lojavirtual.Presentation\src
 C:\Users\Masa\Documents\1-Projetos\lojavirtualjp\FM.lojavirtual.Presentation\src\2-WebApi\FM.lojavirtual.WebApi\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.SqlServer.dll
 C:\Users\Masa\Documents\1-Projetos\lojavirtualjp\FM.lojavirtual.Presentation\src\2-WebApi\FM.lojavirtual.WebApi\bin\Debug\net7.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
 C:\Users\Masa\Documents\1-Projetos\lojavirtualjp\FM.lojavirtual.Presentation\src\2-WebApi\FM.lojavirtual.WebApi\bin\Debug\net7.0\Microsoft.Extensions.Options.dll
+C:\Users\Masa\Documents\1-Projetos\lojavirtualjp\FM.lojavirtual.Presentation\src\2-WebApi\FM.lojavirtual.WebApi\bin\Debug\net7.0\Microsoft.Extensions.PlatformAbstractions.dll
 C:\Users\Masa\Documents\1-Projetos\lojavirtualjp\FM.lojavirtual.Presentation\src\2-WebApi\FM.lojavirtual.WebApi\bin\Debug\net7.0\Microsoft.Extensions.Primitives.dll
 C:\Users\Masa\Documents\1-Projetos\lojavirtualjp\FM.lojavirtual.Presentation\src\2-WebApi\FM.lojavirtual.WebApi\bin\Debug\net7.0\Microsoft.Identity.Client.dll
 C:\Users\Masa\Documents\1-Projetos\lojavirtualjp\FM.lojavirtual.Presentation\src\2-WebApi\FM.lojavirtual.WebApi\bin\Debug\net7.0\Microsoft.Identity.Client.Extensions.Msal.dll
@@ -84,5 +86,3 @@ C:\Users\Masa\Documents\1-Projetos\lojavirtualjp\FM.lojavirtual.Presentation\src
 C:\Users\Masa\Documents\1-Projetos\lojavirtualjp\FM.lojavirtual.Presentation\src\2-WebApi\FM.lojavirtual.WebApi\obj\Debug\net7.0\FM.lojavirtual.WebApi.pdb
 C:\Users\Masa\Documents\1-Projetos\lojavirtualjp\FM.lojavirtual.Presentation\src\2-WebApi\FM.lojavirtual.WebApi\obj\Debug\net7.0\FM.lojavirtual.WebApi.genruntimeconfig.cache
 C:\Users\Masa\Documents\1-Projetos\lojavirtualjp\FM.lojavirtual.Presentation\src\2-WebApi\FM.lojavirtual.WebApi\obj\Debug\net7.0\ref\FM.lojavirtual.WebApi.dll
-C:\Users\Masa\Documents\1-Projetos\lojavirtualjp\FM.lojavirtual.Presentation\src\2-WebApi\FM.lojavirtual.WebApi\bin\Debug\net7.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
-C:\Users\Masa\Documents\1-Projetos\lojavirtualjp\FM.lojavirtual.Presentation\src\2-WebApi\FM.lojavirtual.WebApi\bin\Debug\net7.0\Microsoft.Extensions.PlatformAbstractions.dll

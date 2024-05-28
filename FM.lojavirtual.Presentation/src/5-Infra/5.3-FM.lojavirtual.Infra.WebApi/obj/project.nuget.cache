@@ -1,9 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "ZHKxXg/ekXe26NiPww5zQ9v8kMQQFOtb6DBnXZnJrZjmLj5E3z/N6Oqp330R2+1VHHbpRmKdy6iKjlyQ8wc6aA==",
+  "dgSpecHash": "LzryNOBibmCE9dtYj7QAkcc5xen9jmr3JgJMreJBzL134AgVZj6csdzcfRCuzk5DW6kjuXm5QpxofJSLNIOXQA==",
   "success": true,
   "projectFilePath": "C:\\Users\\Masa\\Documents\\1-Projetos\\lojavirtualjp\\FM.lojavirtual.Presentation\\src\\5-Infra\\5.3-FM.lojavirtual.Infra.WebApi\\5.3-FM.lojavirtual.Infra.WebApi.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\Masa\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
+    "C:\\Users\\Masa\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.1\\automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",
+    "C:\\Users\\Masa\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
     "C:\\Users\\Masa\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\8.0.0\\microsoft.extensions.dependencyinjection.abstractions.8.0.0.nupkg.sha512",
     "C:\\Users\\Masa\\.nuget\\packages\\microsoft.extensions.options\\8.0.2\\microsoft.extensions.options.8.0.2.nupkg.sha512",
     "C:\\Users\\Masa\\.nuget\\packages\\microsoft.extensions.primitives\\8.0.0\\microsoft.extensions.primitives.8.0.0.nupkg.sha512",

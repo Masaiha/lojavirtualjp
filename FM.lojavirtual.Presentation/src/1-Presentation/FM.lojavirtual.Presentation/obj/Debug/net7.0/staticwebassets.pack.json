@@ -5,6 +5,174 @@
       "PackagePath": "staticwebassets\\FM.lojavirtual.Presentation.bundle.scp.css"
     },
     {
+      "Id": "C:\\Users\\Masa\\Documents\\1-Projetos\\lojavirtualjp\\FM.lojavirtual.Presentation\\src\\1-Presentation\\FM.lojavirtual.Presentation\\wwwroot\\Imagens\\1.png",
+      "PackagePath": "staticwebassets\\Imagens\\1.png"
+    },
+    {
+      "Id": "C:\\Users\\Masa\\Documents\\1-Projetos\\lojavirtualjp\\FM.lojavirtual.Presentation\\src\\1-Presentation\\FM.lojavirtual.Presentation\\wwwroot\\Imagens\\2.png",
+      "PackagePath": "staticwebassets\\Imagens\\2.png"
+    },
+    {
+      "Id": "C:\\Users\\Masa\\Documents\\1-Projetos\\lojavirtualjp\\FM.lojavirtual.Presentation\\src\\1-Presentation\\FM.lojavirtual.Presentation\\wwwroot\\Imagens\\3.png",
+      "PackagePath": "staticwebassets\\Imagens\\3.png"
+    },
+    {
+      "Id": "C:\\Users\\Masa\\Documents\\1-Projetos\\lojavirtualjp\\FM.lojavirtual.Presentation\\src\\1-Presentation\\FM.lojavirtual.Presentation\\wwwroot\\Imagens\\4.png",
+      "PackagePath": "staticwebassets\\Imagens\\4.png"
+    },
+    {
+      "Id": "C:\\Users\\Masa\\Documents\\1-Projetos\\lojavirtualjp\\FM.lojavirtual.Presentation\\src\\1-Presentation\\FM.lojavirtual.Presentation\\wwwroot\\Imagens\\Produtos\\feature-1.jpg",
+      "PackagePath": "staticwebassets\\Imagens\\Produtos\\feature-1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Masa\\Documents\\1-Projetos\\lojavirtualjp\\FM.lojavirtual.Presentation\\src\\1-Presentation\\FM.lojavirtual.Presentation\\wwwroot\\Imagens\\Produtos\\feature-2.jpg",
+      "PackagePath": "staticwebassets\\Imagens\\Produtos\\feature-2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Masa\\Documents\\1-Projetos\\lojavirtualjp\\FM.lojavirtual.Presentation\\src\\1-Presentation\\FM.lojavirtual.Presentation\\wwwroot\\Imagens\\Produtos\\feature-3.jpg",
+      "PackagePath": "staticwebassets\\Imagens\\Produtos\\feature-3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Masa\\Documents\\1-Projetos\\lojavirtualjp\\FM.lojavirtual.Presentation\\src\\1-Presentation\\FM.lojavirtual.Presentation\\wwwroot\\Imagens\\Produtos\\feature-4.jpg",
+      "PackagePath": "staticwebassets\\Imagens\\Produtos\\feature-4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Masa\\Documents\\1-Projetos\\lojavirtualjp\\FM.lojavirtual.Presentation\\src\\1-Presentation\\FM.lojavirtual.Presentation\\wwwroot\\Imagens\\Produtos\\feature-5.jpg",
+      "PackagePath": "staticwebassets\\Imagens\\Produtos\\feature-5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Masa\\Documents\\1-Projetos\\lojavirtualjp\\FM.lojavirtual.Presentation\\src\\1-Presentation\\FM.lojavirtual.Presentation\\wwwroot\\Imagens\\Produtos\\feature-6.jpg",
+      "PackagePath": "staticwebassets\\Imagens\\Produtos\\feature-6.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Masa\\Documents\\1-Projetos\\lojavirtualjp\\FM.lojavirtual.Presentation\\src\\1-Presentation\\FM.lojavirtual.Presentation\\wwwroot\\Imagens\\Produtos\\feature-7.jpg",
+      "PackagePath": "staticwebassets\\Imagens\\Produtos\\feature-7.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Masa\\Documents\\1-Projetos\\lojavirtualjp\\FM.lojavirtual.Presentation\\src\\1-Presentation\\FM.lojavirtual.Presentation\\wwwroot\\Imagens\\Produtos\\feature-8.jpg",
+      "PackagePath": "staticwebassets\\Imagens\\Produtos\\feature-8.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Masa\\Documents\\1-Projetos\\lojavirtualjp\\FM.lojavirtual.Presentation\\src\\1-Presentation\\FM.lojavirtual.Presentation\\wwwroot\\Imagens\\Produtos\\fiat1.jpg",
+      "PackagePath": "staticwebassets\\Imagens\\Produtos\\fiat1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Masa\\Documents\\1-Projetos\\lojavirtualjp\\FM.lojavirtual.Presentation\\src\\1-Presentation\\FM.lojavirtual.Presentation\\wwwroot\\Imagens\\Produtos\\fiattmobibranco.jpg",
+      "PackagePath": "staticwebassets\\Imagens\\Produtos\\fiattmobibranco.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Masa\\Documents\\1-Projetos\\lojavirtualjp\\FM.lojavirtual.Presentation\\src\\1-Presentation\\FM.lojavirtual.Presentation\\wwwroot\\Imagens\\Produtos\\lanborgini1.jpg",
+      "PackagePath": "staticwebassets\\Imagens\\Produtos\\lanborgini1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Masa\\Documents\\1-Projetos\\lojavirtualjp\\FM.lojavirtual.Presentation\\src\\1-Presentation\\FM.lojavirtual.Presentation\\wwwroot\\Imagens\\Produtos\\mobi1.jpg",
+      "PackagePath": "staticwebassets\\Imagens\\Produtos\\mobi1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Masa\\Documents\\1-Projetos\\lojavirtualjp\\FM.lojavirtual.Presentation\\src\\1-Presentation\\FM.lojavirtual.Presentation\\wwwroot\\Imagens\\Produtos\\uno1.jpg",
+      "PackagePath": "staticwebassets\\Imagens\\Produtos\\uno1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Masa\\Documents\\1-Projetos\\lojavirtualjp\\FM.lojavirtual.Presentation\\src\\1-Presentation\\FM.lojavirtual.Presentation\\wwwroot\\Imagens\\Produtos\\xiami.jpg",
+      "PackagePath": "staticwebassets\\Imagens\\Produtos\\xiami.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Masa\\Documents\\1-Projetos\\lojavirtualjp\\FM.lojavirtual.Presentation\\src\\1-Presentation\\FM.lojavirtual.Presentation\\wwwroot\\Imagens\\alphard1.jpg",
+      "PackagePath": "staticwebassets\\Imagens\\alphard1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Masa\\Documents\\1-Projetos\\lojavirtualjp\\FM.lojavirtual.Presentation\\src\\1-Presentation\\FM.lojavirtual.Presentation\\wwwroot\\Imagens\\alphard2.jpg",
+      "PackagePath": "staticwebassets\\Imagens\\alphard2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Masa\\Documents\\1-Projetos\\lojavirtualjp\\FM.lojavirtual.Presentation\\src\\1-Presentation\\FM.lojavirtual.Presentation\\wwwroot\\Imagens\\alphard3.jpg",
+      "PackagePath": "staticwebassets\\Imagens\\alphard3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Masa\\Documents\\1-Projetos\\lojavirtualjp\\FM.lojavirtual.Presentation\\src\\1-Presentation\\FM.lojavirtual.Presentation\\wwwroot\\Imagens\\alphard4.jpg",
+      "PackagePath": "staticwebassets\\Imagens\\alphard4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Masa\\Documents\\1-Projetos\\lojavirtualjp\\FM.lojavirtual.Presentation\\src\\1-Presentation\\FM.lojavirtual.Presentation\\wwwroot\\Imagens\\banners\\banner.jpg",
+      "PackagePath": "staticwebassets\\Imagens\\banners\\banner.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Masa\\Documents\\1-Projetos\\lojavirtualjp\\FM.lojavirtual.Presentation\\src\\1-Presentation\\FM.lojavirtual.Presentation\\wwwroot\\Imagens\\banners\\banner1.jpg",
+      "PackagePath": "staticwebassets\\Imagens\\banners\\banner1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Masa\\Documents\\1-Projetos\\lojavirtualjp\\FM.lojavirtual.Presentation\\src\\1-Presentation\\FM.lojavirtual.Presentation\\wwwroot\\Imagens\\blog\\adeviso_motorista_novo.jpg",
+      "PackagePath": "staticwebassets\\Imagens\\blog\\adeviso_motorista_novo.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Masa\\Documents\\1-Projetos\\lojavirtualjp\\FM.lojavirtual.Presentation\\src\\1-Presentation\\FM.lojavirtual.Presentation\\wwwroot\\Imagens\\blog\\blog-1.jpg",
+      "PackagePath": "staticwebassets\\Imagens\\blog\\blog-1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Masa\\Documents\\1-Projetos\\lojavirtualjp\\FM.lojavirtual.Presentation\\src\\1-Presentation\\FM.lojavirtual.Presentation\\wwwroot\\Imagens\\blog\\blog-2.jpg",
+      "PackagePath": "staticwebassets\\Imagens\\blog\\blog-2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Masa\\Documents\\1-Projetos\\lojavirtualjp\\FM.lojavirtual.Presentation\\src\\1-Presentation\\FM.lojavirtual.Presentation\\wwwroot\\Imagens\\blog\\blog-3.jpg",
+      "PackagePath": "staticwebassets\\Imagens\\blog\\blog-3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Masa\\Documents\\1-Projetos\\lojavirtualjp\\FM.lojavirtual.Presentation\\src\\1-Presentation\\FM.lojavirtual.Presentation\\wwwroot\\Imagens\\blog\\blog-4.jpg",
+      "PackagePath": "staticwebassets\\Imagens\\blog\\blog-4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Masa\\Documents\\1-Projetos\\lojavirtualjp\\FM.lojavirtual.Presentation\\src\\1-Presentation\\FM.lojavirtual.Presentation\\wwwroot\\Imagens\\blog\\blog-5.jpg",
+      "PackagePath": "staticwebassets\\Imagens\\blog\\blog-5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Masa\\Documents\\1-Projetos\\lojavirtualjp\\FM.lojavirtual.Presentation\\src\\1-Presentation\\FM.lojavirtual.Presentation\\wwwroot\\Imagens\\blog\\blog-6.jpg",
+      "PackagePath": "staticwebassets\\Imagens\\blog\\blog-6.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Masa\\Documents\\1-Projetos\\lojavirtualjp\\FM.lojavirtual.Presentation\\src\\1-Presentation\\FM.lojavirtual.Presentation\\wwwroot\\Imagens\\blog\\hibridos_japao.jpg",
+      "PackagePath": "staticwebassets\\Imagens\\blog\\hibridos_japao.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Masa\\Documents\\1-Projetos\\lojavirtualjp\\FM.lojavirtual.Presentation\\src\\1-Presentation\\FM.lojavirtual.Presentation\\wwwroot\\Imagens\\blog\\pneus_neve.jpg",
+      "PackagePath": "staticwebassets\\Imagens\\blog\\pneus_neve.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Masa\\Documents\\1-Projetos\\lojavirtualjp\\FM.lojavirtual.Presentation\\src\\1-Presentation\\FM.lojavirtual.Presentation\\wwwroot\\Imagens\\login.jpg",
+      "PackagePath": "staticwebassets\\Imagens\\login.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Masa\\Documents\\1-Projetos\\lojavirtualjp\\FM.lojavirtual.Presentation\\src\\1-Presentation\\FM.lojavirtual.Presentation\\wwwroot\\Imagens\\logo.png",
+      "PackagePath": "staticwebassets\\Imagens\\logo.png"
+    },
+    {
+      "Id": "C:\\Users\\Masa\\Documents\\1-Projetos\\lojavirtualjp\\FM.lojavirtual.Presentation\\src\\1-Presentation\\FM.lojavirtual.Presentation\\wwwroot\\Imagens\\logo_fundo_branco.jpg",
+      "PackagePath": "staticwebassets\\Imagens\\logo_fundo_branco.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Masa\\Documents\\1-Projetos\\lojavirtualjp\\FM.lojavirtual.Presentation\\src\\1-Presentation\\FM.lojavirtual.Presentation\\wwwroot\\Imagens\\logo_fundo_preto.jpg",
+      "PackagePath": "staticwebassets\\Imagens\\logo_fundo_preto.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Masa\\Documents\\1-Projetos\\lojavirtualjp\\FM.lojavirtual.Presentation\\src\\1-Presentation\\FM.lojavirtual.Presentation\\wwwroot\\Imagens\\wagonR1.jpg",
+      "PackagePath": "staticwebassets\\Imagens\\wagonR1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Masa\\Documents\\1-Projetos\\lojavirtualjp\\FM.lojavirtual.Presentation\\src\\1-Presentation\\FM.lojavirtual.Presentation\\wwwroot\\Imagens\\wagonR2.jpg",
+      "PackagePath": "staticwebassets\\Imagens\\wagonR2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Masa\\Documents\\1-Projetos\\lojavirtualjp\\FM.lojavirtual.Presentation\\src\\1-Presentation\\FM.lojavirtual.Presentation\\wwwroot\\Imagens\\wagonR3.jpg",
+      "PackagePath": "staticwebassets\\Imagens\\wagonR3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Masa\\Documents\\1-Projetos\\lojavirtualjp\\FM.lojavirtual.Presentation\\src\\1-Presentation\\FM.lojavirtual.Presentation\\wwwroot\\Imagens\\wagonR4.jpg",
+      "PackagePath": "staticwebassets\\Imagens\\wagonR4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Masa\\Documents\\1-Projetos\\lojavirtualjp\\FM.lojavirtual.Presentation\\src\\1-Presentation\\FM.lojavirtual.Presentation\\wwwroot\\css\\customFM.css",
+      "PackagePath": "staticwebassets\\css\\customFM.css"
+    },
+    {
       "Id": "C:\\Users\\Masa\\Documents\\1-Projetos\\lojavirtualjp\\FM.lojavirtual.Presentation\\src\\1-Presentation\\FM.lojavirtual.Presentation\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },
@@ -15,6 +183,18 @@
     {
       "Id": "C:\\Users\\Masa\\Documents\\1-Projetos\\lojavirtualjp\\FM.lojavirtual.Presentation\\src\\1-Presentation\\FM.lojavirtual.Presentation\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "C:\\Users\\Masa\\Documents\\1-Projetos\\lojavirtualjp\\FM.lojavirtual.Presentation\\src\\1-Presentation\\FM.lojavirtual.Presentation\\wwwroot\\lib\\ElegantIcons.woff",
+      "PackagePath": "staticwebassets\\lib\\ElegantIcons.woff"
+    },
+    {
+      "Id": "C:\\Users\\Masa\\Documents\\1-Projetos\\lojavirtualjp\\FM.lojavirtual.Presentation\\src\\1-Presentation\\FM.lojavirtual.Presentation\\wwwroot\\lib\\FontAwesome.otf",
+      "PackagePath": "staticwebassets\\lib\\FontAwesome.otf"
+    },
+    {
+      "Id": "C:\\Users\\Masa\\Documents\\1-Projetos\\lojavirtualjp\\FM.lojavirtual.Presentation\\src\\1-Presentation\\FM.lojavirtual.Presentation\\wwwroot\\lib\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap.min.css"
     },
     {
       "Id": "C:\\Users\\Masa\\Documents\\1-Projetos\\lojavirtualjp\\FM.lojavirtual.Presentation\\src\\1-Presentation\\FM.lojavirtual.Presentation\\wwwroot\\lib\\bootstrap\\LICENSE",
@@ -197,6 +377,126 @@
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
     },
     {
+      "Id": "C:\\Users\\Masa\\Documents\\1-Projetos\\lojavirtualjp\\FM.lojavirtual.Presentation\\src\\1-Presentation\\FM.lojavirtual.Presentation\\wwwroot\\lib\\elegant-icons.css",
+      "PackagePath": "staticwebassets\\lib\\elegant-icons.css"
+    },
+    {
+      "Id": "C:\\Users\\Masa\\Documents\\1-Projetos\\lojavirtualjp\\FM.lojavirtual.Presentation\\src\\1-Presentation\\FM.lojavirtual.Presentation\\wwwroot\\lib\\font-awesome.min.css",
+      "PackagePath": "staticwebassets\\lib\\font-awesome.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Masa\\Documents\\1-Projetos\\lojavirtualjp\\FM.lojavirtual.Presentation\\src\\1-Presentation\\FM.lojavirtual.Presentation\\wwwroot\\lib\\fontawesome-webfont.eot",
+      "PackagePath": "staticwebassets\\lib\\fontawesome-webfont.eot"
+    },
+    {
+      "Id": "C:\\Users\\Masa\\Documents\\1-Projetos\\lojavirtualjp\\FM.lojavirtual.Presentation\\src\\1-Presentation\\FM.lojavirtual.Presentation\\wwwroot\\lib\\fontawesome-webfont.svg",
+      "PackagePath": "staticwebassets\\lib\\fontawesome-webfont.svg"
+    },
+    {
+      "Id": "C:\\Users\\Masa\\Documents\\1-Projetos\\lojavirtualjp\\FM.lojavirtual.Presentation\\src\\1-Presentation\\FM.lojavirtual.Presentation\\wwwroot\\lib\\fontawesome-webfont.ttf",
+      "PackagePath": "staticwebassets\\lib\\fontawesome-webfont.ttf"
+    },
+    {
+      "Id": "C:\\Users\\Masa\\Documents\\1-Projetos\\lojavirtualjp\\FM.lojavirtual.Presentation\\src\\1-Presentation\\FM.lojavirtual.Presentation\\wwwroot\\lib\\fontawesome-webfont.woff",
+      "PackagePath": "staticwebassets\\lib\\fontawesome-webfont.woff"
+    },
+    {
+      "Id": "C:\\Users\\Masa\\Documents\\1-Projetos\\lojavirtualjp\\FM.lojavirtual.Presentation\\src\\1-Presentation\\FM.lojavirtual.Presentation\\wwwroot\\lib\\fontawesome-webfont.woff2",
+      "PackagePath": "staticwebassets\\lib\\fontawesome-webfont.woff2"
+    },
+    {
+      "Id": "C:\\Users\\Masa\\Documents\\1-Projetos\\lojavirtualjp\\FM.lojavirtual.Presentation\\src\\1-Presentation\\FM.lojavirtual.Presentation\\wwwroot\\lib\\fonts\\ElegantIcons.eot",
+      "PackagePath": "staticwebassets\\lib\\fonts\\ElegantIcons.eot"
+    },
+    {
+      "Id": "C:\\Users\\Masa\\Documents\\1-Projetos\\lojavirtualjp\\FM.lojavirtual.Presentation\\src\\1-Presentation\\FM.lojavirtual.Presentation\\wwwroot\\lib\\fonts\\ElegantIcons.svg",
+      "PackagePath": "staticwebassets\\lib\\fonts\\ElegantIcons.svg"
+    },
+    {
+      "Id": "C:\\Users\\Masa\\Documents\\1-Projetos\\lojavirtualjp\\FM.lojavirtual.Presentation\\src\\1-Presentation\\FM.lojavirtual.Presentation\\wwwroot\\lib\\fonts\\ElegantIcons.ttf",
+      "PackagePath": "staticwebassets\\lib\\fonts\\ElegantIcons.ttf"
+    },
+    {
+      "Id": "C:\\Users\\Masa\\Documents\\1-Projetos\\lojavirtualjp\\FM.lojavirtual.Presentation\\src\\1-Presentation\\FM.lojavirtual.Presentation\\wwwroot\\lib\\fonts\\ElegantIcons.woff",
+      "PackagePath": "staticwebassets\\lib\\fonts\\ElegantIcons.woff"
+    },
+    {
+      "Id": "C:\\Users\\Masa\\Documents\\1-Projetos\\lojavirtualjp\\FM.lojavirtual.Presentation\\src\\1-Presentation\\FM.lojavirtual.Presentation\\wwwroot\\lib\\fonts\\FontAwesome.otf",
+      "PackagePath": "staticwebassets\\lib\\fonts\\FontAwesome.otf"
+    },
+    {
+      "Id": "C:\\Users\\Masa\\Documents\\1-Projetos\\lojavirtualjp\\FM.lojavirtual.Presentation\\src\\1-Presentation\\FM.lojavirtual.Presentation\\wwwroot\\lib\\fonts\\Roboto-Black.ttf",
+      "PackagePath": "staticwebassets\\lib\\fonts\\Roboto-Black.ttf"
+    },
+    {
+      "Id": "C:\\Users\\Masa\\Documents\\1-Projetos\\lojavirtualjp\\FM.lojavirtual.Presentation\\src\\1-Presentation\\FM.lojavirtual.Presentation\\wwwroot\\lib\\fonts\\Roboto-BlackItalic.ttf",
+      "PackagePath": "staticwebassets\\lib\\fonts\\Roboto-BlackItalic.ttf"
+    },
+    {
+      "Id": "C:\\Users\\Masa\\Documents\\1-Projetos\\lojavirtualjp\\FM.lojavirtual.Presentation\\src\\1-Presentation\\FM.lojavirtual.Presentation\\wwwroot\\lib\\fonts\\Roboto-Bold.ttf",
+      "PackagePath": "staticwebassets\\lib\\fonts\\Roboto-Bold.ttf"
+    },
+    {
+      "Id": "C:\\Users\\Masa\\Documents\\1-Projetos\\lojavirtualjp\\FM.lojavirtual.Presentation\\src\\1-Presentation\\FM.lojavirtual.Presentation\\wwwroot\\lib\\fonts\\Roboto-BoldItalic.ttf",
+      "PackagePath": "staticwebassets\\lib\\fonts\\Roboto-BoldItalic.ttf"
+    },
+    {
+      "Id": "C:\\Users\\Masa\\Documents\\1-Projetos\\lojavirtualjp\\FM.lojavirtual.Presentation\\src\\1-Presentation\\FM.lojavirtual.Presentation\\wwwroot\\lib\\fonts\\Roboto-Italic.ttf",
+      "PackagePath": "staticwebassets\\lib\\fonts\\Roboto-Italic.ttf"
+    },
+    {
+      "Id": "C:\\Users\\Masa\\Documents\\1-Projetos\\lojavirtualjp\\FM.lojavirtual.Presentation\\src\\1-Presentation\\FM.lojavirtual.Presentation\\wwwroot\\lib\\fonts\\Roboto-Light.ttf",
+      "PackagePath": "staticwebassets\\lib\\fonts\\Roboto-Light.ttf"
+    },
+    {
+      "Id": "C:\\Users\\Masa\\Documents\\1-Projetos\\lojavirtualjp\\FM.lojavirtual.Presentation\\src\\1-Presentation\\FM.lojavirtual.Presentation\\wwwroot\\lib\\fonts\\Roboto-LightItalic.ttf",
+      "PackagePath": "staticwebassets\\lib\\fonts\\Roboto-LightItalic.ttf"
+    },
+    {
+      "Id": "C:\\Users\\Masa\\Documents\\1-Projetos\\lojavirtualjp\\FM.lojavirtual.Presentation\\src\\1-Presentation\\FM.lojavirtual.Presentation\\wwwroot\\lib\\fonts\\Roboto-Medium.ttf",
+      "PackagePath": "staticwebassets\\lib\\fonts\\Roboto-Medium.ttf"
+    },
+    {
+      "Id": "C:\\Users\\Masa\\Documents\\1-Projetos\\lojavirtualjp\\FM.lojavirtual.Presentation\\src\\1-Presentation\\FM.lojavirtual.Presentation\\wwwroot\\lib\\fonts\\Roboto-MediumItalic.ttf",
+      "PackagePath": "staticwebassets\\lib\\fonts\\Roboto-MediumItalic.ttf"
+    },
+    {
+      "Id": "C:\\Users\\Masa\\Documents\\1-Projetos\\lojavirtualjp\\FM.lojavirtual.Presentation\\src\\1-Presentation\\FM.lojavirtual.Presentation\\wwwroot\\lib\\fonts\\Roboto-Regular.ttf",
+      "PackagePath": "staticwebassets\\lib\\fonts\\Roboto-Regular.ttf"
+    },
+    {
+      "Id": "C:\\Users\\Masa\\Documents\\1-Projetos\\lojavirtualjp\\FM.lojavirtual.Presentation\\src\\1-Presentation\\FM.lojavirtual.Presentation\\wwwroot\\lib\\fonts\\Roboto-Thin.ttf",
+      "PackagePath": "staticwebassets\\lib\\fonts\\Roboto-Thin.ttf"
+    },
+    {
+      "Id": "C:\\Users\\Masa\\Documents\\1-Projetos\\lojavirtualjp\\FM.lojavirtual.Presentation\\src\\1-Presentation\\FM.lojavirtual.Presentation\\wwwroot\\lib\\fonts\\Roboto-ThinItalic.ttf",
+      "PackagePath": "staticwebassets\\lib\\fonts\\Roboto-ThinItalic.ttf"
+    },
+    {
+      "Id": "C:\\Users\\Masa\\Documents\\1-Projetos\\lojavirtualjp\\FM.lojavirtual.Presentation\\src\\1-Presentation\\FM.lojavirtual.Presentation\\wwwroot\\lib\\fonts\\fontawesome-webfont.eot",
+      "PackagePath": "staticwebassets\\lib\\fonts\\fontawesome-webfont.eot"
+    },
+    {
+      "Id": "C:\\Users\\Masa\\Documents\\1-Projetos\\lojavirtualjp\\FM.lojavirtual.Presentation\\src\\1-Presentation\\FM.lojavirtual.Presentation\\wwwroot\\lib\\fonts\\fontawesome-webfont.svg",
+      "PackagePath": "staticwebassets\\lib\\fonts\\fontawesome-webfont.svg"
+    },
+    {
+      "Id": "C:\\Users\\Masa\\Documents\\1-Projetos\\lojavirtualjp\\FM.lojavirtual.Presentation\\src\\1-Presentation\\FM.lojavirtual.Presentation\\wwwroot\\lib\\fonts\\fontawesome-webfont.ttf",
+      "PackagePath": "staticwebassets\\lib\\fonts\\fontawesome-webfont.ttf"
+    },
+    {
+      "Id": "C:\\Users\\Masa\\Documents\\1-Projetos\\lojavirtualjp\\FM.lojavirtual.Presentation\\src\\1-Presentation\\FM.lojavirtual.Presentation\\wwwroot\\lib\\fonts\\fontawesome-webfont.woff",
+      "PackagePath": "staticwebassets\\lib\\fonts\\fontawesome-webfont.woff"
+    },
+    {
+      "Id": "C:\\Users\\Masa\\Documents\\1-Projetos\\lojavirtualjp\\FM.lojavirtual.Presentation\\src\\1-Presentation\\FM.lojavirtual.Presentation\\wwwroot\\lib\\fonts\\fontawesome-webfont.woff2",
+      "PackagePath": "staticwebassets\\lib\\fonts\\fontawesome-webfont.woff2"
+    },
+    {
+      "Id": "C:\\Users\\Masa\\Documents\\1-Projetos\\lojavirtualjp\\FM.lojavirtual.Presentation\\src\\1-Presentation\\FM.lojavirtual.Presentation\\wwwroot\\lib\\jquery-ui.min.css",
+      "PackagePath": "staticwebassets\\lib\\jquery-ui.min.css"
+    },
+    {
       "Id": "C:\\Users\\Masa\\Documents\\1-Projetos\\lojavirtualjp\\FM.lojavirtual.Presentation\\src\\1-Presentation\\FM.lojavirtual.Presentation\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
       "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
     },
@@ -243,6 +543,18 @@
     {
       "Id": "C:\\Users\\Masa\\Documents\\1-Projetos\\lojavirtualjp\\FM.lojavirtual.Presentation\\src\\1-Presentation\\FM.lojavirtual.Presentation\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "C:\\Users\\Masa\\Documents\\1-Projetos\\lojavirtualjp\\FM.lojavirtual.Presentation\\src\\1-Presentation\\FM.lojavirtual.Presentation\\wwwroot\\lib\\mixitup.min.js",
+      "PackagePath": "staticwebassets\\lib\\mixitup.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Masa\\Documents\\1-Projetos\\lojavirtualjp\\FM.lojavirtual.Presentation\\src\\1-Presentation\\FM.lojavirtual.Presentation\\wwwroot\\lib\\nice-select.css",
+      "PackagePath": "staticwebassets\\lib\\nice-select.css"
+    },
+    {
+      "Id": "C:\\Users\\Masa\\Documents\\1-Projetos\\lojavirtualjp\\FM.lojavirtual.Presentation\\src\\1-Presentation\\FM.lojavirtual.Presentation\\wwwroot\\lib\\owl.carousel.min.js",
+      "PackagePath": "staticwebassets\\lib\\owl.carousel.min.js"
     },
     {
       "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.FM.lojavirtual.Presentation.Microsoft.AspNetCore.StaticWebAssets.props",

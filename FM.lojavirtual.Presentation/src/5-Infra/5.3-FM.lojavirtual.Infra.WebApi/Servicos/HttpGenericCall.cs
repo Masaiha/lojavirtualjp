@@ -62,8 +62,8 @@ namespace _5._3_FM.lojavirtual.Infra.WebApi.Servicos
                 {
                     string result = await response.Content.ReadAsStringAsync().ConfigureAwait(false);
 
-                    //if (response.Headers.Contains("access-token") && response.Headers.GetValues("access-token") != null)
-                    //    PersistToken._token = new Application.Dto.TokenDto(response.Headers.GetValues("access-token").FirstOrDefault());
+                    if (response.Headers.Contains("access-token") && response.Headers.GetValues("access-token") != null)
+                        PersistToken._token = new TokenDto(response.Headers.GetValues("access-token").FirstOrDefault());
 
                     _baseHttpClient.ValidarRequisicaoHttp(response, result, url);
 

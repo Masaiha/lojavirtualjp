@@ -1,8 +1,274 @@
-﻿@{
-    ViewData["Title"] = "Home Page";
-}
+﻿@*<link href="~/lib/font-awesome.min.css" rel="stylesheet" />*@
+<link href="~/lib/bootstrap.min.css" rel="stylesheet" />
+<link href="~/lib/elegant-icons.css" rel="stylesheet" />
+<link href="~/lib/jquery-ui.min.css" rel="stylesheet" />
+<link href="~/lib/nice-select.css" rel="stylesheet" />
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+<style>
+    .featured__controls {
+        text-align: center;
+    }
+
+        .featured__controls ul li {
+            list-style: none;
+            font-size: 18px;
+            color: #1c1c1c;
+            display: inline-block;
+            margin-right: 25px;
+            position: relative;
+            cursor: pointer;
+        }
+
+            .featured__controls ul li.active:after {
+                opacity: 1;
+            }
+
+            .featured__controls ul li:after {
+                position: absolute;
+                left: 0;
+                bottom: -2px;
+                width: 100%;
+                height: 2px;
+                background: #7fad39;
+                content: "";
+                opacity: 0;
+            }
+
+            .featured__controls ul li:last-child {
+                margin-right: 0;
+            }
+
+    .featured__item {
+        margin-bottom: 50px;
+    }
+
+        .featured__item:hover .featured__item__pic .featured__item__pic__hover {
+            bottom: 10px;
+        }
+
+    .featured__item__pic {
+        height: 180px;
+        position: relative;
+        overflow: hidden;
+        background-position: center center;
+    }
+
+    .featured__item__pic__hover {
+        position: absolute;
+        left: 0;
+        bottom: -50px;
+        width: 100%;
+        text-align: center;
+        -webkit-transition: all, 0.5s;
+        -moz-transition: all, 0.5s;
+        -ms-transition: all, 0.5s;
+        -o-transition: all, 0.5s;
+        transition: all, 0.5s;
+    }
+
+        .featured__item__pic__hover li {
+            list-style: none;
+            display: inline-block;
+            margin-right: 6px;
+        }
+
+            .featured__item__pic__hover li:last-child {
+                margin-right: 0;
+            }
+
+            .featured__item__pic__hover li:hover a {
+                background: #7fad39;
+                border-color: #7fad39;
+            }
+
+                .featured__item__pic__hover li:hover a i {
+                    color: #ffffff;
+                    transform: rotate(360deg);
+                }
+
+            .featured__item__pic__hover li a {
+                font-size: 16px;
+                color: #1c1c1c;
+                height: 40px;
+                width: 40px;
+                line-height: 40px;
+                text-align: center;
+                border: 1px solid #ebebeb;
+                background: #ffffff;
+                display: block;
+                border-radius: 50%;
+                -webkit-transition: all, 0.5s;
+                -moz-transition: all, 0.5s;
+                -ms-transition: all, 0.5s;
+                -o-transition: all, 0.5s;
+                transition: all, 0.5s;
+            }
+
+                .featured__item__pic__hover li a i {
+                    position: relative;
+                    transform: rotate(0);
+                    -webkit-transition: all, 0.3s;
+                    -moz-transition: all, 0.3s;
+                    -ms-transition: all, 0.3s;
+                    -o-transition: all, 0.3s;
+                    transition: all, 0.3s;
+                }
+
+    .featured__item__text {
+        text-align: center;
+        padding-top: 15px;
+    }
+
+        .featured__item__text h6 {
+            margin-bottom: 10px;
+        }
+
+            .featured__item__text h6 a {
+                color: #252525;
+            }
+
+        .featured__item__text h5 {
+            color: #252525;
+            font-weight: 700;
+        }
+</style>
+
+<script src="~/lib/mixitup.min.js"></script>
+<script src="~/lib/jquery/dist/jquery.min.js"></script>
+<script src="~/js/site.js"></script>
+
+<div class="row">
+    @*<div class="hero__item set-bg" style="height: 431px;
+    display: flex;
+    align-items: center;
+    padding-left: 75px;">
+    <div class="hero__text">
+    <span>FRUIT FRESH</span>
+    <h2>Vegetable <br />100% Organic</h2>
+    <p>Free Pickup and Delivery Available</p>
+    <a href="#" class="primary-btn">SHOP NOW</a>
+    </div>
+    <img src="~/imagens/banners/banner.jpg" />
+    </div>
+    *@
+
+    <section>
+        <img src="~/imagens/banners/banner1.jpg" />
+    </section>
+
+    <section class="featured spad" style="background-color: aliceblue;">
+        <div class="container">
+            <div class="row mt-4">
+                <div class="col-lg-12" style="display: flex;flex-direction: column;">
+                 
+                    <div class="featured__controls">
+                        <ul>
+                            <li class="active" data-filter="*">Todos</li>
+                            <li data-filter=".mobi">Mobi</li>
+                            <li data-filter=".wagonR">Keyzinho</li>
+                            <li data-filter=".alphard">Alphard</li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+            <div class="row featured__filter mt-3">
+
+                <div class="col-lg-3 col-md-4 col-sm-6 mix mobi">
+                    <div class="featured__item">
+                        <div class="featured__item__pic set-bg">
+                            <img src="~/imagens/produtos/fiat1.jpg" />
+                        </div>
+                        <div class="featured__item__text" style="display: flex; align-content: initial">
+                            <div class="titulo_produto"><h4 class="font-weight-bold">Toyota Corolla</h4></div>
+                            <div class="descricao_produto"><p class="">600 cc TURBO HÍBRIDO 4 PORTAS</p></div>
+                            <div class="preco_produto"><p class="font-weight-bold">R$ 100.000,00</p></div>
+                            <div class="modelo_produto"><p class="">Modelo: 2024</p></div>
+                            <div class="km_produto"><p class="">55.000 km</p></div>
+                            <div class="btn_produto"><a class="btn btn-dark" href="#">Comprar</a></div>
+                        </div>
+                    </div>
+                </div>
+
+
+              @*  <div class="col-lg-3 col-md-4 col-sm-6 mix wagonR">
+                    <div class="featured__item">
+                        <div class="featured__item__pic set-bg">
+                            <img src="~/imagens/wagonr1.jpg" />
+                        </div>
+                        <div class="featured__item__text">
+                            <h6><a href="#">Crab Pool Security</a></h6>
+                            <h5>$30.00</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 mix wagonR">
+                    <div class="featured__item">
+                        <div class="featured__item__pic set-bg">
+                            <img src="~/imagens/wagonr2.jpg" />
+                        </div>
+                        <div class="featured__item__text">
+                            <h6><a href="#">Crab Pool Security</a></h6>
+                            <h5>$30.00</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 mix wagonR">
+                    <div class="featured__item">
+                        <div class="featured__item__pic set-bg">
+                            <img src="~/imagens/wagonr3.jpg" />
+                        </div>
+                        <div class="featured__item__text">
+                            <h6><a href="#">Crab Pool Security</a></h6>
+                            <h5>$30.00</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 mix wagonR">
+                    <div class="featured__item">
+                        <div class="featured__item__pic set-bg">
+                            <img src="~/imagens/wagonr4.jpg" />
+                        </div>
+                        <div class="featured__item__text">
+                            <h6><a href="#">Crab Pool Security</a></h6>
+                            <h5>$30.00</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 mix alphard">
+                    <div class="featured__item">
+                        <div class="featured__item__pic set-bg">
+                            <img src="~/imagens/alphard1.jpg" />
+                        </div>
+                        <div class="featured__item__text">
+                            <h6><a href="#">Crab Pool Security</a></h6>
+                            <h5>$30.00</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 mix alphard">
+                    <div class="featured__item">
+                        <div class="featured__item__pic set-bg">
+                            <img src="~/imagens/alphard2.jpg" />
+                        </div>
+                        <div class="featured__item__text">
+                            <h6><a href="#">Crab Pool Security</a></h6>
+                            <h5>$30.00</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 mix alphard">
+                    <div class="featured__item">
+                        <div class="featured__item__pic set-bg">
+                            <img src="~/imagens/alphard3.jpg" />
+                        </div>
+                        <div class="featured__item__text">
+                            <h6><a href="#">Crab Pool Security</a></h6>
+                            <h5>$30.00</h5>
+                        </div>
+                    </div>
+                </div>*@
+            </div>
+        </div>
+    </section>
 </div>
