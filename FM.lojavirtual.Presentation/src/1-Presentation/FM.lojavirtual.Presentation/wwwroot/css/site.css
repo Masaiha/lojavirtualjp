@@ -17,7 +17,6 @@ html {
 html {
     position: relative;
     min-height: 100%;
-    font-family: Roboto !important;
 }
 
 body {
@@ -34,3 +33,7 @@ footer {
     color:red;
 }
 
+
+.nav-link:hover {
+
+}

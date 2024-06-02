@@ -5,6 +5,55 @@
 <link href="~/lib/nice-select.css" rel="stylesheet" />
 
 <style>
+    html, body, div, span, applet, object, iframe,
+    h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+    a, abbr, acronym, address, big, cite, code,
+    del, dfn, em, img, ins, kbd, q, s, samp,
+    small, strike, strong, sub, sup, tt, var,
+    b, u, i, center,
+    dl, dt, dd, ol, ul, li,
+    fieldset, form, label, legend,
+    table, caption, tbody, tfoot, thead, tr, th, td,
+    article, aside, canvas, details, embed,
+    figure, figcaption, footer, header, hgroup,
+    menu, nav, output, ruby, section, summary,
+    time, mark, audio, video {
+        margin: 0;
+        padding: 0;
+        border: 0;
+        font-size: 100%;
+        font: inherit;
+        vertical-align: baseline;
+    }
+    /* HTML5 display-role reset for older browsers */
+    article, aside, details, figcaption, figure,
+    footer, header, hgroup, menu, nav, section {
+        display: block;
+    }
+
+    body {
+        line-height: 1;
+    }
+
+    ol, ul {
+        list-style: none;
+    }
+
+    blockquote, q {
+        quotes: none;
+    }
+
+        blockquote:before, blockquote:after,
+        q:before, q:after {
+            content: '';
+            content: none;
+        }
+
+    table {
+        border-collapse: collapse;
+        border-spacing: 0;
+    }
+
     .featured__controls {
         text-align: center;
     }
@@ -12,7 +61,7 @@
         .featured__controls ul li {
             list-style: none;
             font-size: 18px;
-            color: #1c1c1c;
+            color: #001644;
             display: inline-block;
             margin-right: 25px;
             position: relative;
@@ -39,7 +88,10 @@
             }
 
     .featured__item {
-        margin-bottom: 50px;
+        /*margin-bottom: 50px;*/
+        border: 1px solid #cccccc;
+        margin-right: .5em;
+        border-radius: .3em;
     }
 
         .featured__item:hover .featured__item__pic .featured__item__pic__hover {
@@ -115,8 +167,11 @@
                 }
 
     .featured__item__text {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        padding: 1em;
         text-align: center;
-        padding-top: 15px;
     }
 
         .featured__item__text h6 {
@@ -137,7 +192,7 @@
 <script src="~/lib/jquery/dist/jquery.min.js"></script>
 <script src="~/js/site.js"></script>
 
-<div class="row">
+<div class="row" style="display: flex;flex-direction: row;text-align: center;">
     @*<div class="hero__item set-bg" style="height: 431px;
     display: flex;
     align-items: center;
@@ -156,13 +211,13 @@
         <img src="~/imagens/banners/banner1.jpg" />
     </section>
 
-    <section class="featured spad" style="background-color: aliceblue;">
+    <section class="featured spad">
         <div class="container">
             <div class="row mt-4">
-                <div class="col-lg-12" style="display: flex;flex-direction: column;">
-                 
+                <div class="col-lg-12" style="display: flex;flex-direction: column;background: #cdcdcd;padding: 1em;border-radius: 0.2em;">
+
                     <div class="featured__controls">
-                        <ul>
+                        <ul style="white-space">
                             <li class="active" data-filter="*">Todos</li>
                             <li data-filter=".mobi">Mobi</li>
                             <li data-filter=".wagonR">Keyzinho</li>
@@ -174,100 +229,42 @@
             </div>
             <div class="row featured__filter mt-3">
 
-                <div class="col-lg-3 col-md-4 col-sm-6 mix mobi">
-                    <div class="featured__item">
+                <div class="mix mobi" style="display:grid; grid-template-columns: repeat(4, 25%)">
+
+
+                    <div class="featured__item" style="max-width: calc(66vh - 4em); padding: 1em;">
                         <div class="featured__item__pic set-bg">
                             <img src="~/imagens/produtos/fiat1.jpg" />
                         </div>
-                        <div class="featured__item__text" style="display: flex; align-content: initial">
-                            <div class="titulo_produto"><h4 class="font-weight-bold">Toyota Corolla</h4></div>
-                            <div class="descricao_produto"><p class="">600 cc TURBO HÍBRIDO 4 PORTAS</p></div>
-                            <div class="preco_produto"><p class="font-weight-bold">R$ 100.000,00</p></div>
-                            <div class="modelo_produto"><p class="">Modelo: 2024</p></div>
-                            <div class="km_produto"><p class="">55.000 km</p></div>
-                            <div class="btn_produto"><a class="btn btn-dark" href="#">Comprar</a></div>
+                        <div class="featured__item__text">
+                            <div>
+                                <div class="titulo_produto row" style="margin-bottom: 1em;">
+                                    <h4 class="font-weight-bold">Toyota Corolla</h4>
+                                </div>
+                                <div class="descricao_produto row" style="margin-bottom: 1em;">
+                                    <p>600 cc TURBO HÍBRIDO 4 PORTAS</p>
+                                </div>
+                            </div>
+
+                            <div class="preco_produto row" style="margin-bottom: .5em;">
+                                <p class="font-weight-bold">R$ 100.000,00</p>
+                            </div>
+                            <div class="modelo_produto row" style="margin-bottom: .5em;">
+                                <p class="">Modelo: 2024</p>
+                            </div>
+                            <div class="km_produto row" style="margin-bottom: .5em;">
+                                <p class="">55.000 km</p>
+                            </div>
+                            <div class="btn_produto row" style="margin-bottom: .5em;">
+                                <a class="btn btn-dark" href="#">Comprar</a>
+                            </div>
                         </div>
                     </div>
-                </div>
 
 
-              @*  <div class="col-lg-3 col-md-4 col-sm-6 mix wagonR">
-                    <div class="featured__item">
-                        <div class="featured__item__pic set-bg">
-                            <img src="~/imagens/wagonr1.jpg" />
-                        </div>
-                        <div class="featured__item__text">
-                            <h6><a href="#">Crab Pool Security</a></h6>
-                            <h5>$30.00</h5>
-                        </div>
-                    </div>
+
                 </div>
-                <div class="col-lg-3 col-md-4 col-sm-6 mix wagonR">
-                    <div class="featured__item">
-                        <div class="featured__item__pic set-bg">
-                            <img src="~/imagens/wagonr2.jpg" />
-                        </div>
-                        <div class="featured__item__text">
-                            <h6><a href="#">Crab Pool Security</a></h6>
-                            <h5>$30.00</h5>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-4 col-sm-6 mix wagonR">
-                    <div class="featured__item">
-                        <div class="featured__item__pic set-bg">
-                            <img src="~/imagens/wagonr3.jpg" />
-                        </div>
-                        <div class="featured__item__text">
-                            <h6><a href="#">Crab Pool Security</a></h6>
-                            <h5>$30.00</h5>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-4 col-sm-6 mix wagonR">
-                    <div class="featured__item">
-                        <div class="featured__item__pic set-bg">
-                            <img src="~/imagens/wagonr4.jpg" />
-                        </div>
-                        <div class="featured__item__text">
-                            <h6><a href="#">Crab Pool Security</a></h6>
-                            <h5>$30.00</h5>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-4 col-sm-6 mix alphard">
-                    <div class="featured__item">
-                        <div class="featured__item__pic set-bg">
-                            <img src="~/imagens/alphard1.jpg" />
-                        </div>
-                        <div class="featured__item__text">
-                            <h6><a href="#">Crab Pool Security</a></h6>
-                            <h5>$30.00</h5>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-4 col-sm-6 mix alphard">
-                    <div class="featured__item">
-                        <div class="featured__item__pic set-bg">
-                            <img src="~/imagens/alphard2.jpg" />
-                        </div>
-                        <div class="featured__item__text">
-                            <h6><a href="#">Crab Pool Security</a></h6>
-                            <h5>$30.00</h5>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-4 col-sm-6 mix alphard">
-                    <div class="featured__item">
-                        <div class="featured__item__pic set-bg">
-                            <img src="~/imagens/alphard3.jpg" />
-                        </div>
-                        <div class="featured__item__text">
-                            <h6><a href="#">Crab Pool Security</a></h6>
-                            <h5>$30.00</h5>
-                        </div>
-                    </div>
-                </div>*@
+
             </div>
         </div>
     </section>
