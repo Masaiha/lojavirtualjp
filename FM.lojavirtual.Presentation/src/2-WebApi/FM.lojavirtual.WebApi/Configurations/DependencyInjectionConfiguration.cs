@@ -17,15 +17,17 @@ namespace FM.lojavirtual.WebApi.Configurations
             ///////////////////////////  AppService //////////////////////////////////
             services.AddScoped<IUsuarioAppService, UsuarioAppService>();
             services.AddScoped<ILoginAppService, LoginAppService>();
+            services.AddScoped<IVeiculoAppService, VeiculoAppService>();
 
             /////////////////////////////  pService //////////////////////////////////
-            services.AddScoped<IUsuarioService, UsuarioService>();
+            services.AddScoped<IVeiculoService, VeiculoService>();
 
 
             ///////////////////////////  Repository //////////////////////////////////
             services.AddScoped<IUsuarioRepository, UsuarioRepository>();
             services.AddScoped<ILojaRepository, LojaRepository>();
             services.AddScoped<ILoginRepository, LoginRepository>();
+            services.AddScoped<IVeiculoRepository, VeiculoRepository>();
 
 
 
