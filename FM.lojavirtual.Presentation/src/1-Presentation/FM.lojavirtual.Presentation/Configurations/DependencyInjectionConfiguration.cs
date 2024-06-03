@@ -14,9 +14,10 @@ namespace FM.lojavirtual.Presentation.Configurations
             services.AddScoped<IBaseHttpClient, BaseHttpClient>();
             services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
 
+
             services.AddScoped<LojaServicoWebApi>();
 
-
+            services.AddScoped<IVeiculoWebApi, VeiculoWebApi>();
             services.AddScoped<ILoginWebApi, LoginWebApi>();
 
 

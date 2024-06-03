@@ -20,7 +20,7 @@ namespace _5._2_FM.lojavirtual.Infra.Data.Repository
                                             Modelo,
                                             Kilometragem,
                                             Descricao,
-                                            Valor,
+                                            Valor
                                        FROM dbo.Veiculos WITH (NOLOCK)
                                 ";
 

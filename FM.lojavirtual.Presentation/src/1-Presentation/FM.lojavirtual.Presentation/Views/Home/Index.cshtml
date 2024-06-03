@@ -250,7 +250,7 @@
                                 <p class="font-weight-bold">R$ 100.000,00</p>
                             </div>
                             <div class="modelo_produto row" style="margin-bottom: .5em;">
-                                <p class="">Modelo: 2024</p>
+                                <p class="modelo_produto__text">Modelo: 2024</p>
                             </div>
                             <div class="km_produto row" style="margin-bottom: .5em;">
                                 <p class="">55.000 km</p>
@@ -269,3 +269,37 @@
         </div>
     </section>
 </div>
+
+<div class="teste"></div>
+
+<script>
+    console.log("Masanori Iha");
+
+    console.log($('.modelo_produto__text').val());
+
+    
+    setTimeout(() => {
+        console.log("Delayed for 1 second.");
+        Teste();
+
+    }, "5000");
+
+    function Teste(){
+        
+        $.ajax({
+            type: "GET",
+            url: '@Url.Action("ListarVeiculos", "Veiculo")',
+            data: {},
+            success: function (recData) {
+                
+                $('.teste').html(recData);
+            },
+            error: function (recData) {
+                console.log(recData)
+            },
+            complete: function () {
+                
+            }
+        });
+    }
+</script>

@@ -20,6 +20,7 @@ namespace FM.lojavirtual.WebApi.Configurations
             services.AddScoped<IVeiculoAppService, VeiculoAppService>();
 
             /////////////////////////////  pService //////////////////////////////////
+            services.AddScoped<IUsuarioService, UsuarioService>();
             services.AddScoped<IVeiculoService, VeiculoService>();
 
 

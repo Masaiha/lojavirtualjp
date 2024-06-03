@@ -6,5 +6,6 @@
         public string BaseApiUrl { get; set; }
         public string Loja { get; set; }
         public string Autenticar { get; set; }
+        public string VeiculoListar { get; set; }
     }
 }

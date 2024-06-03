@@ -9,6 +9,7 @@ namespace FM.lojavirtual.Application.AutoMapper
         public DomainToViewModelMappingProfile()
         {
             CreateMap<Usuario, UsuarioViewModel>();
+            CreateMap<Veiculo, VeiculoViewModel>();
         }
     }
 }
