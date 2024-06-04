@@ -17,5 +17,19 @@ namespace FM.lojavirtual.Domain.Servicos
         {
             return await _repository.Listar();
         }
+        
+        public async Task Adicionar(Veiculo veiculo)
+        {
+
+            if (string.IsNullOrEmpty(veiculo.Nome) ||
+               string.IsNullOrEmpty(veiculo.Descricao) ||
+               veiculo.Valor <= 0)
+                throw new Exception("Preencha os dados do veículo corretamente.");
+
+            await _repository.Adicionar(veiculo);
+
+            return;
+        }
+
     }
 }

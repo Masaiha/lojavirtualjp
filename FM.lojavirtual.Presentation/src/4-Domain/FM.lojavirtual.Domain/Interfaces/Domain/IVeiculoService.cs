@@ -5,5 +5,6 @@ namespace FM.lojavirtual.Domain.Interfaces.Domain
     public interface IVeiculoService
     {
         Task<IEnumerable<Veiculo>> Listar();
+        Task Adicionar(Veiculo veiculo);
     }
 }

@@ -1,196 +1,11 @@
 ﻿@*<link href="~/lib/font-awesome.min.css" rel="stylesheet" />*@
-<link href="~/lib/bootstrap.min.css" rel="stylesheet" />
+@*<link href="~/lib/bootstrap.min.css" rel="stylesheet" />
 <link href="~/lib/elegant-icons.css" rel="stylesheet" />
 <link href="~/lib/jquery-ui.min.css" rel="stylesheet" />
-<link href="~/lib/nice-select.css" rel="stylesheet" />
-
-<style>
-    html, body, div, span, applet, object, iframe,
-    h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-    a, abbr, acronym, address, big, cite, code,
-    del, dfn, em, img, ins, kbd, q, s, samp,
-    small, strike, strong, sub, sup, tt, var,
-    b, u, i, center,
-    dl, dt, dd, ol, ul, li,
-    fieldset, form, label, legend,
-    table, caption, tbody, tfoot, thead, tr, th, td,
-    article, aside, canvas, details, embed,
-    figure, figcaption, footer, header, hgroup,
-    menu, nav, output, ruby, section, summary,
-    time, mark, audio, video {
-        margin: 0;
-        padding: 0;
-        border: 0;
-        font-size: 100%;
-        font: inherit;
-        vertical-align: baseline;
-    }
-    /* HTML5 display-role reset for older browsers */
-    article, aside, details, figcaption, figure,
-    footer, header, hgroup, menu, nav, section {
-        display: block;
-    }
-
-    body {
-        line-height: 1;
-    }
-
-    ol, ul {
-        list-style: none;
-    }
-
-    blockquote, q {
-        quotes: none;
-    }
-
-        blockquote:before, blockquote:after,
-        q:before, q:after {
-            content: '';
-            content: none;
-        }
-
-    table {
-        border-collapse: collapse;
-        border-spacing: 0;
-    }
-
-    .featured__controls {
-        text-align: center;
-    }
-
-        .featured__controls ul li {
-            list-style: none;
-            font-size: 18px;
-            color: #001644;
-            display: inline-block;
-            margin-right: 25px;
-            position: relative;
-            cursor: pointer;
-        }
-
-            .featured__controls ul li.active:after {
-                opacity: 1;
-            }
-
-            .featured__controls ul li:after {
-                position: absolute;
-                left: 0;
-                bottom: -2px;
-                width: 100%;
-                height: 2px;
-                background: #7fad39;
-                content: "";
-                opacity: 0;
-            }
-
-            .featured__controls ul li:last-child {
-                margin-right: 0;
-            }
-
-    .featured__item {
-        /*margin-bottom: 50px;*/
-        border: 1px solid #cccccc;
-        margin-right: .5em;
-        border-radius: .3em;
-    }
-
-        .featured__item:hover .featured__item__pic .featured__item__pic__hover {
-            bottom: 10px;
-        }
-
-    .featured__item__pic {
-        height: 180px;
-        position: relative;
-        overflow: hidden;
-        background-position: center center;
-    }
-
-    .featured__item__pic__hover {
-        position: absolute;
-        left: 0;
-        bottom: -50px;
-        width: 100%;
-        text-align: center;
-        -webkit-transition: all, 0.5s;
-        -moz-transition: all, 0.5s;
-        -ms-transition: all, 0.5s;
-        -o-transition: all, 0.5s;
-        transition: all, 0.5s;
-    }
-
-        .featured__item__pic__hover li {
-            list-style: none;
-            display: inline-block;
-            margin-right: 6px;
-        }
-
-            .featured__item__pic__hover li:last-child {
-                margin-right: 0;
-            }
-
-            .featured__item__pic__hover li:hover a {
-                background: #7fad39;
-                border-color: #7fad39;
-            }
-
-                .featured__item__pic__hover li:hover a i {
-                    color: #ffffff;
-                    transform: rotate(360deg);
-                }
-
-            .featured__item__pic__hover li a {
-                font-size: 16px;
-                color: #1c1c1c;
-                height: 40px;
-                width: 40px;
-                line-height: 40px;
-                text-align: center;
-                border: 1px solid #ebebeb;
-                background: #ffffff;
-                display: block;
-                border-radius: 50%;
-                -webkit-transition: all, 0.5s;
-                -moz-transition: all, 0.5s;
-                -ms-transition: all, 0.5s;
-                -o-transition: all, 0.5s;
-                transition: all, 0.5s;
-            }
-
-                .featured__item__pic__hover li a i {
-                    position: relative;
-                    transform: rotate(0);
-                    -webkit-transition: all, 0.3s;
-                    -moz-transition: all, 0.3s;
-                    -ms-transition: all, 0.3s;
-                    -o-transition: all, 0.3s;
-                    transition: all, 0.3s;
-                }
-
-    .featured__item__text {
-        display: flex;
-        flex-direction: column;
-        align-items: start;
-        padding: 1em;
-        text-align: center;
-    }
-
-        .featured__item__text h6 {
-            margin-bottom: 10px;
-        }
-
-            .featured__item__text h6 a {
-                color: #252525;
-            }
-
-        .featured__item__text h5 {
-            color: #252525;
-            font-weight: 700;
-        }
-</style>
+<link href="~/lib/nice-select.css" rel="stylesheet" />*@
 
 <script src="~/lib/mixitup.min.js"></script>
-<script src="~/lib/jquery/dist/jquery.min.js"></script>
-<script src="~/js/site.js"></script>
+<link href="~/css/veiculos/index.css?cache=@(DateTime.Now.Second)" rel="stylesheet" />
 
 <div class="row" style="display: flex;flex-direction: row;text-align: center;">
     @*<div class="hero__item set-bg" style="height: 431px;
@@ -227,78 +42,43 @@
 
                 </div>
             </div>
+
+            @*#################################*@
+            @*Container de veículos disponíveis*@
+            @*#################################*@
+
             <div class="row featured__filter mt-3">
-
-                <div class="mix mobi" style="display:grid; grid-template-columns: repeat(4, 25%)">
-
-
-                    <div class="featured__item" style="max-width: calc(66vh - 4em); padding: 1em;">
-                        <div class="featured__item__pic set-bg">
-                            <img src="~/imagens/produtos/fiat1.jpg" />
-                        </div>
-                        <div class="featured__item__text">
-                            <div>
-                                <div class="titulo_produto row" style="margin-bottom: 1em;">
-                                    <h4 class="font-weight-bold">Toyota Corolla</h4>
-                                </div>
-                                <div class="descricao_produto row" style="margin-bottom: 1em;">
-                                    <p>600 cc TURBO HÍBRIDO 4 PORTAS</p>
-                                </div>
-                            </div>
-
-                            <div class="preco_produto row" style="margin-bottom: .5em;">
-                                <p class="font-weight-bold">R$ 100.000,00</p>
-                            </div>
-                            <div class="modelo_produto row" style="margin-bottom: .5em;">
-                                <p class="modelo_produto__text">Modelo: 2024</p>
-                            </div>
-                            <div class="km_produto row" style="margin-bottom: .5em;">
-                                <p class="">55.000 km</p>
-                            </div>
-                            <div class="btn_produto row" style="margin-bottom: .5em;">
-                                <a class="btn btn-dark" href="#">Comprar</a>
-                            </div>
-                        </div>
-                    </div>
-
-
-
-                </div>
-
+                <div class="mix container-produtos"></div>
+                
+                
             </div>
         </div>
     </section>
 </div>
 
-<div class="teste"></div>
 
 <script>
-    console.log("Masanori Iha");
-
-    console.log($('.modelo_produto__text').val());
-
     
-    setTimeout(() => {
-        console.log("Delayed for 1 second.");
-        Teste();
+    window.onload = function () {
+        ListarVeiculos();
+    };
 
-    }, "5000");
 
-    function Teste(){
-        
+    function ListarVeiculos() {
+
         $.ajax({
             type: "GET",
             url: '@Url.Action("ListarVeiculos", "Veiculo")',
             data: {},
             success: function (recData) {
-                
-                $('.teste').html(recData);
+
+                $('.container-produtos').html(recData);
             },
             error: function (recData) {
                 console.log(recData)
             },
             complete: function () {
-                
+
             }
         });
     }

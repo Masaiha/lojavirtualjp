@@ -1,4 +1,6 @@
-﻿namespace FM.lojavirtual.Domain.Entidades
+﻿using System.Globalization;
+
+namespace FM.lojavirtual.Domain.Entidades
 {
     public class Veiculo
     {
@@ -9,5 +11,11 @@
         public int Kilometragem { get; set; }
         public string Descricao { get; set; }
         public decimal Valor { get; set; }
+
+
+        public string ObterValorVeiculoModeloBancoDados()
+        {
+            return Valor.ToString("N", CultureInfo.CreateSpecificCulture("en-US")).Replace(",", "");
+        }
     }
 }

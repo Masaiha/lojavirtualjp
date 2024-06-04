@@ -1,65 +1,37 @@
 ﻿@model IEnumerable<FM.lojavirtual.Application.ViewModels.VeiculoViewModel>
 
-<p>
-    <a asp-action="Create">Create New</a>
-</p>
-<table class="table">
-    <thead>
-        <tr>
-            <th>
-                @Html.DisplayNameFor(model => model.Id)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Nome)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.AnoFabricacao)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Modelo)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Kilometragem)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Descricao)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Valor)
-            </th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-@foreach (var item in Model) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.Id)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Nome)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.AnoFabricacao)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Modelo)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Kilometragem)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Descricao)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Valor)
-            </td>
-            <td>
-                @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
-                @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
-                @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
-            </td>
-        </tr>
+
+@foreach (var item in Model)
+{
+    <div class="featured__item" style="max-width: calc(66vh - 4em); padding: 1em;">
+        <div class="featured__item__pic set-bg">
+            <img src="~/imagens/produtos/fiat1.jpg" />
+        </div>
+        <div class="featured__item__text">
+            <div>
+                <div class="titulo_produto row" style="margin-bottom: 1em;">
+                    <h4 class="font-weight-bold">@item.Nome</h4>
+                </div>
+                <div class="descricao_produto row" style="margin-bottom: 1em;">
+                    <p>@item.Descricao</p>
+                </div>
+            </div>
+
+            <div class="preco_produto row" style="margin-bottom: .5em;">
+                <p class="font-weight-bold">R$ @item.Valor</p>
+            </div>
+            <div class="modelo_produto row" style="margin-bottom: .5em;">
+                <p class="modelo_produto__text">Modelo: @item.Modelo</p>
+            </div>
+            <div class="km_produto row" style="margin-bottom: .5em;">
+                <p class="">@item.Kilometragem km</p>
+            </div>
+            <div class="btn_produto row" style="margin-bottom: .5em;">
+                <a class="btn btn-dark" href="#">Comprar</a>
+            </div>
+        </div>
+    </div>
+
 }
-    </tbody>
-</table>
+
+<a class="btn btn-warning"><i class="fa-solid fa-plus"></i> adicionar</a>

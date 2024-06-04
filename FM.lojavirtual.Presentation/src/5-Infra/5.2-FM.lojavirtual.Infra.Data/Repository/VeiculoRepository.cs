@@ -2,6 +2,7 @@
 using Dapper;
 using FM.lojavirtual.Domain.Entidades;
 using FM.lojavirtual.Domain.Interfaces.Repository;
+using System.Globalization;
 
 namespace _5._2_FM.lojavirtual.Infra.Data.Repository
 {
@@ -28,5 +29,29 @@ namespace _5._2_FM.lojavirtual.Infra.Data.Repository
 
             return veiculos;
         }
+
+        public async Task Adicionar(Veiculo veiculo)
+        {
+            var cn = OpenConnectionDb();
+
+            string sql = $@"INSERT INTO Veiculos  (Nome, 
+                                                        AnoFabricacao, 
+                                                        Modelo, 
+                                                        Kilometragem, 
+                                                        Descricao, 
+                                                        Valor)
+                                                VALUES (
+                                                        '{veiculo.Nome}', 
+                                                         {veiculo.AnoFabricacao}, 
+                                                         {veiculo.Modelo}, 
+                                                         {veiculo.Kilometragem}, 
+                                                        '{veiculo.Descricao}', 
+                                                         {veiculo.ObterValorVeiculoModeloBancoDados()}); ";
+
+            await cn.QueryAsync(sql);
+
+            return;
+        }
+
     }
 }

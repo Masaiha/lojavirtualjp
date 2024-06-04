@@ -3,6 +3,7 @@ C:\Users\Masa\Documents\1-Projetos\lojavirtualjp\FM.lojavirtual.Presentation\src
 C:\Users\Masa\Documents\1-Projetos\lojavirtualjp\FM.lojavirtual.Presentation\src\1-Presentation\FM.lojavirtual.Presentation\bin\Debug\net7.0\FM.lojavirtual.WebApi.exe
 C:\Users\Masa\Documents\1-Projetos\lojavirtualjp\FM.lojavirtual.Presentation\src\1-Presentation\FM.lojavirtual.Presentation\bin\Debug\net7.0\appsettings.Development.json
 C:\Users\Masa\Documents\1-Projetos\lojavirtualjp\FM.lojavirtual.Presentation\src\1-Presentation\FM.lojavirtual.Presentation\bin\Debug\net7.0\appsettings.json
+C:\Users\Masa\Documents\1-Projetos\lojavirtualjp\FM.lojavirtual.Presentation\src\1-Presentation\FM.lojavirtual.Presentation\bin\Debug\net7.0\libman.json
 C:\Users\Masa\Documents\1-Projetos\lojavirtualjp\FM.lojavirtual.Presentation\src\1-Presentation\FM.lojavirtual.Presentation\bin\Debug\net7.0\FM.lojavirtual.Presentation.staticwebassets.runtime.json
 C:\Users\Masa\Documents\1-Projetos\lojavirtualjp\FM.lojavirtual.Presentation\src\1-Presentation\FM.lojavirtual.Presentation\bin\Debug\net7.0\FM.lojavirtual.Presentation.exe
 C:\Users\Masa\Documents\1-Projetos\lojavirtualjp\FM.lojavirtual.Presentation\src\1-Presentation\FM.lojavirtual.Presentation\bin\Debug\net7.0\FM.lojavirtual.Presentation.deps.json
