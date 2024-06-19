@@ -8,6 +8,13 @@
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link href="~/font-awesome/css/all.min.css" rel="stylesheet" />
 </head>
+
+<style>
+    .blog__item__pic {
+        display: flex;
+        justify-content: center;
+    }
+</style>
 <body style="background-color: aliceblue">
     <header>
         <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light border-bottom box-shadow mb-3">
@@ -48,7 +55,9 @@
 
 
 
-
+    <hr />
+    <br />
+    <br />
 
     <!-- Blog Section Begin -->
     <section class="from-blog spad" style="margin-bottom: 4rem !important;">
@@ -110,24 +119,44 @@
         </div>
     </section>
     <!-- Blog Section End -->
+    @* ********************************************** *@
+    @*                   MODAL                        *@
+    @* ********************************************** *@
+    <div id="ModalFM" class="modal fade in">
+        <div class="modal-dialog">
+            <div class="modal-content" style=" width: 96%; max-width: inherit;">
+                <div id="ModalFMTitle">
+                    <h4 id="ModalFMTitleText"></h4>
+                </div>
+                <div id="ModalFMContent"></div>
+            </div>
+        </div>
+    </div>
+
+@*    <div id="ModalPfmeasGrande" class="modal fade in">
+        <div class="modal-dialog">
+            <div class="modal-content" style=" width: 100%; max-width: inherit;">
+                <div id="ModalPfmeasContentGrande">
+                </div>
+            </div>
+        </div>
+    </div>*@
+
+
 
     <footer class="border-top footer text-muted">
         <div class="container">
             &copy; 2024 - FM.lojavirtual.Presentation - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
         </div>
     </footer>
-
-
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
-    <script src="~/lib/jquery/dist/jquery.js"></script>
-    
-    
+    <script src="~/lib/jquery/dist/jquery.js"></script>   
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    
     <script src="~/js/site.js?cache=@(DateTime.Now.Second)" asp-append-version="true"></script>
-    
-    @*<script src="~/lib/owl.carousel.min.js"></script>*@
+    <script src="~/js/custommodal.js"></script>
+    <script src="~/lib/mixitup.min.js"></script>
 
+    @await Component.InvokeAsync("Notyf")
     @await RenderSectionAsync("Scripts", required: false)
 </body>
 </html>

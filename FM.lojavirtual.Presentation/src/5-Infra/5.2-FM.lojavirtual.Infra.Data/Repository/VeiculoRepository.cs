@@ -15,17 +15,75 @@ namespace _5._2_FM.lojavirtual.Infra.Data.Repository
             var cn = OpenConnectionDb();
 
             const string sql = @"SET ARITHABORT ON
-                                     SELECT Id,
-                                            Nome,
-                                            AnoFabricacao,
-                                            Modelo,
-                                            Kilometragem,
-                                            Descricao,
-                                            Valor
-                                       FROM dbo.Veiculos WITH (NOLOCK)
+                                     select v.Nome,
+	                                        AnoFabricacao,
+	                                        Modelo, Kilometragem,
+	                                        Descricao,
+	                                        Valor,
+	                                        vi.Id As IdImagem,
+	                                        vi.Nome As Nome,
+	                                        vi.Tipo,
+                                            tv.Id As IdTiposVeiculo,
+                                            tv.Nome As Nome
+                                       from Veiculos v  WITH (NOLOCK)
+                                       join VeiculoImagem vi  WITH (NOLOCK)
+                                         on v.Id = vi.IdVeiculo
+                                        join TiposVeiculo tv WITH (NOLOCK)
+                                          on tv.Id = v.IdTipoVeiculo
                                 ";
 
-            var veiculos = await cn.QueryAsync<Veiculo>(sql);
+            var veiculos = await cn.QueryAsync<Veiculo, VeiculoImagem, TiposVeiculo, Veiculo>(
+                sql: sql,
+                map: (veiculo, veiculoImagem, tiposVeiculo) =>
+                    {
+                        veiculo.VeiculoImagem = veiculoImagem;
+                        veiculo.TiposVeiculo = tiposVeiculo;
+
+                        return veiculo;
+                    },
+                null,
+                splitOn: "IdImagem, IdTiposVeiculo",
+                transaction: null);
+
+
+            return veiculos;
+        }
+
+        public async Task<IEnumerable<Veiculo>> Listar(int idTipoVeiculo)
+        {
+            var cn = OpenConnectionDb();
+
+            string sql = $@"SET ARITHABORT ON
+                                     SELECT v.Nome,
+	                                        AnoFabricacao,
+	                                        Modelo, Kilometragem,
+	                                        Descricao,
+	                                        Valor,
+	                                        vi.Id As IdImagem,
+	                                        vi.Nome As Nome,
+	                                        vi.Tipo,
+                                            tv.Id As IdTiposVeiculo,
+                                            tv.Nome As Nome
+                                       FROM Veiculos v  WITH (NOLOCK)
+                                       JOIN VeiculoImagem vi  WITH (NOLOCK)
+                                         ON v.Id = vi.IdVeiculo
+                                       JOIN TiposVeiculo tv WITH (NOLOCK)
+                                         ON tv.Id = v.IdTipoVeiculo
+                                      WHERE tv.Id = {idTipoVeiculo} ";
+
+            var veiculos = await cn.QueryAsync<Veiculo, VeiculoImagem, TiposVeiculo, Veiculo>(
+                sql: sql,
+                map: (veiculo, veiculoImagem, tiposVeiculo) =>
+                {
+                    veiculo.VeiculoImagem = veiculoImagem;
+                    veiculo.TiposVeiculo = tiposVeiculo;
+
+                    return veiculo;
+                },
+                null,
+                splitOn: "IdImagem, IdTiposVeiculo",
+                transaction: null);
+
 
             return veiculos;
         }
@@ -52,6 +110,5 @@ namespace _5._2_FM.lojavirtual.Infra.Data.Repository
 
             return;
         }
-
     }
 }

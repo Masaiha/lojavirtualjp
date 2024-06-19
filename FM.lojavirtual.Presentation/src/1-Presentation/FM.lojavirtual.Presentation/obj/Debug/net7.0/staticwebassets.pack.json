@@ -73,6 +73,18 @@
       "PackagePath": "staticwebassets\\Imagens\\Produtos\\uno1.jpg"
     },
     {
+      "Id": "C:\\Users\\Masa\\Documents\\1-Projetos\\lojavirtualjp\\FM.lojavirtual.Presentation\\src\\1-Presentation\\FM.lojavirtual.Presentation\\wwwroot\\Imagens\\Produtos\\wagonR1.jpg",
+      "PackagePath": "staticwebassets\\Imagens\\Produtos\\wagonR1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Masa\\Documents\\1-Projetos\\lojavirtualjp\\FM.lojavirtual.Presentation\\src\\1-Presentation\\FM.lojavirtual.Presentation\\wwwroot\\Imagens\\Produtos\\wagonR2.jpg",
+      "PackagePath": "staticwebassets\\Imagens\\Produtos\\wagonR2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Masa\\Documents\\1-Projetos\\lojavirtualjp\\FM.lojavirtual.Presentation\\src\\1-Presentation\\FM.lojavirtual.Presentation\\wwwroot\\Imagens\\Produtos\\wagonR3.jpg",
+      "PackagePath": "staticwebassets\\Imagens\\Produtos\\wagonR3.jpg"
+    },
+    {
       "Id": "C:\\Users\\Masa\\Documents\\1-Projetos\\lojavirtualjp\\FM.lojavirtual.Presentation\\src\\1-Presentation\\FM.lojavirtual.Presentation\\wwwroot\\Imagens\\Produtos\\xiami.jpg",
       "PackagePath": "staticwebassets\\Imagens\\Produtos\\xiami.jpg"
     },
@@ -151,18 +163,6 @@
     {
       "Id": "C:\\Users\\Masa\\Documents\\1-Projetos\\lojavirtualjp\\FM.lojavirtual.Presentation\\src\\1-Presentation\\FM.lojavirtual.Presentation\\wwwroot\\Imagens\\logo_fundo_preto.jpg",
       "PackagePath": "staticwebassets\\Imagens\\logo_fundo_preto.jpg"
-    },
-    {
-      "Id": "C:\\Users\\Masa\\Documents\\1-Projetos\\lojavirtualjp\\FM.lojavirtual.Presentation\\src\\1-Presentation\\FM.lojavirtual.Presentation\\wwwroot\\Imagens\\wagonR1.jpg",
-      "PackagePath": "staticwebassets\\Imagens\\wagonR1.jpg"
-    },
-    {
-      "Id": "C:\\Users\\Masa\\Documents\\1-Projetos\\lojavirtualjp\\FM.lojavirtual.Presentation\\src\\1-Presentation\\FM.lojavirtual.Presentation\\wwwroot\\Imagens\\wagonR2.jpg",
-      "PackagePath": "staticwebassets\\Imagens\\wagonR2.jpg"
-    },
-    {
-      "Id": "C:\\Users\\Masa\\Documents\\1-Projetos\\lojavirtualjp\\FM.lojavirtual.Presentation\\src\\1-Presentation\\FM.lojavirtual.Presentation\\wwwroot\\Imagens\\wagonR3.jpg",
-      "PackagePath": "staticwebassets\\Imagens\\wagonR3.jpg"
     },
     {
       "Id": "C:\\Users\\Masa\\Documents\\1-Projetos\\lojavirtualjp\\FM.lojavirtual.Presentation\\src\\1-Presentation\\FM.lojavirtual.Presentation\\wwwroot\\Imagens\\wagonR4.jpg",
@@ -355,6 +355,10 @@
     {
       "Id": "C:\\Users\\Masa\\Documents\\1-Projetos\\lojavirtualjp\\FM.lojavirtual.Presentation\\src\\1-Presentation\\FM.lojavirtual.Presentation\\wwwroot\\font-awesome\\webfonts\\fa-v4compatibility.woff2",
       "PackagePath": "staticwebassets\\font-awesome\\webfonts\\fa-v4compatibility.woff2"
+    },
+    {
+      "Id": "C:\\Users\\Masa\\Documents\\1-Projetos\\lojavirtualjp\\FM.lojavirtual.Presentation\\src\\1-Presentation\\FM.lojavirtual.Presentation\\wwwroot\\js\\custommodal.js",
+      "PackagePath": "staticwebassets\\js\\custommodal.js"
     },
     {
       "Id": "C:\\Users\\Masa\\Documents\\1-Projetos\\lojavirtualjp\\FM.lojavirtual.Presentation\\src\\1-Presentation\\FM.lojavirtual.Presentation\\wwwroot\\js\\site.js",

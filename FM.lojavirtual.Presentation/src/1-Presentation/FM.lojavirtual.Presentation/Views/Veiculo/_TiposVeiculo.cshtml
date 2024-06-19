@@ -1,0 +1,10 @@
+﻿@model IEnumerable<FM.lojavirtual.Application.ViewModels.TiposVeiculoViewModel>;
+
+
+<ul style="white-space">
+<li class="active" onclick="javascript: ListarVeiculos()">Todos</li>
+@foreach (var item in Model)
+{
+        <li onclick="javascript: FiltrarVeiculos(@item.Id)">@item.Nome</li>
+}
+</ul>

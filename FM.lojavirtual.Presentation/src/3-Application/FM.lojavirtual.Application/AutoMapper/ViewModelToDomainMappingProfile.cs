@@ -10,6 +10,7 @@ namespace FM.lojavirtual.Application.AutoMapper
         {
             CreateMap<UsuarioViewModel, Usuario>();
             CreateMap<VeiculoViewModel, Veiculo>();
+            CreateMap<VeiculoImagem, VeiculoImagemViewModel>();
         }
     }
 }

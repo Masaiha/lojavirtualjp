@@ -1,17 +1,28 @@
 ﻿using _5._3_FM.lojavirtual.Infra.WebApi.Interfaces;
+using AspNetCoreHero.ToastNotification.Abstractions;
+using FM.lojavirtual.Application.ViewModels;
+using FM.lojavirtual.Presentation.Interfaces;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
 namespace FM.lojavirtual.Presentation.Controllers
 {
+    [Route("[controller]/[action]")]
     public class VeiculoController : Controller
     {
-
+        private readonly IUser _user;
+        private string _token;
         private readonly IVeiculoWebApi _webApi;
+        private readonly ITiposVeiculoWebApi _tiposVeiculoWebApi;
+        private readonly INotyfService _notyfService;
 
-        public VeiculoController(IVeiculoWebApi webApi)
+        public VeiculoController(IVeiculoWebApi webApi, IUser user, ITiposVeiculoWebApi tiposVeiculoWebApi, INotyfService notyfService)
         {
             _webApi = webApi;
+            _user = user;
+            _token = _user.ObterUsuarioToken();
+            _tiposVeiculoWebApi = tiposVeiculoWebApi;
+            _notyfService = notyfService;
         }
 
         public ActionResult Index()
@@ -22,78 +33,48 @@ namespace FM.lojavirtual.Presentation.Controllers
         [HttpGet]
         public async Task<IActionResult> ListarVeiculos(CancellationToken cancellationToken)
         {
-            var veiculos = await _webApi.Listar(cancellationToken);
+            var veiculos = await _webApi.Listar(_token, cancellationToken);
+
+            var quantidadeVeiculos = veiculos?.Count();
+
+            _notyfService.Success($"{quantidadeVeiculos} veículos encontrados!");
 
             return PartialView("Index", veiculos);
         }
 
-        //// GET: VeiculoController/Details/5
-        //public ActionResult Details(int id)
-        //{
-        //    return View();
-        //}
+        [HttpGet]
+        public async Task<IActionResult> Filtrar(int idTipoVeiculo, CancellationToken cancellationToken)
+        {
+            var veiculos = await _webApi.Listar(idTipoVeiculo, _token, cancellationToken);
 
-        //// GET: VeiculoController/Create
-        //public ActionResult Create()
-        //{
-        //    return View();
-        //}
+            var quantidadeVeiculos = veiculos?.Count();
 
-        //// POST: VeiculoController/Create
-        //[HttpPost]
-        //[ValidateAntiForgeryToken]
-        //public ActionResult Create(IFormCollection collection)
-        //{
-        //    try
-        //    {
-        //        return RedirectToAction(nameof(Index));
-        //    }
-        //    catch
-        //    {
-        //        return View();
-        //    }
-        //}
+            _notyfService.Success($"{quantidadeVeiculos} veículos encontrados!");
 
-        //// GET: VeiculoController/Edit/5
-        //public ActionResult Edit(int id)
-        //{
-        //    return View();
-        //}
+            return PartialView("Index", veiculos);
+        }
 
-        //// POST: VeiculoController/Edit/5
-        //[HttpPost]
-        //[ValidateAntiForgeryToken]
-        //public ActionResult Edit(int id, IFormCollection collection)
-        //{
-        //    try
-        //    {
-        //        return RedirectToAction(nameof(Index));
-        //    }
-        //    catch
-        //    {
-        //        return View();
-        //    }
-        //}
+        [HttpGet]
+        public IActionResult AdicionarGet()
+        {
+            return PartialView("_Adicionar");
+        }
 
-        //// GET: VeiculoController/Delete/5
-        //public ActionResult Delete(int id)
-        //{
-        //    return View();
-        //}
 
-        //// POST: VeiculoController/Delete/5
-        //[HttpPost]
-        //[ValidateAntiForgeryToken]
-        //public ActionResult Delete(int id, IFormCollection collection)
-        //{
-        //    try
-        //    {
-        //        return RedirectToAction(nameof(Index));
-        //    }
-        //    catch
-        //    {
-        //        return View();
-        //    }
-        //}
+        [HttpPost]
+        public async Task<IActionResult> Adicionar(VeiculoViewModel veiculoViewModel, CancellationToken cancellationToken)
+        {
+            await _webApi.Adicionar(veiculoViewModel, _token, cancellationToken);
+
+            return Ok();
+        }
+
+        [HttpGet]
+        public async Task<IActionResult> ListarTiposVeiculo(CancellationToken cancellationToken)
+        {
+            var tiposVeiculo = await _tiposVeiculoWebApi.Listar(_token, cancellationToken);
+
+            return PartialView("_TiposVeiculo", tiposVeiculo);
+        }
     }
 }

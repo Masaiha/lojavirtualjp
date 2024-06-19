@@ -93,3 +93,39 @@ footer {
     border-radius: .3em !important;
     max-height: 2.5em !important;
 }
+
+#ModalFMContent {
+    overflow: scroll;
+    padding: 1em;
+}
+
+#ModalFM .btn{
+    width: 10em;
+}
+
+#ModalFMTitle {
+    background: #6c2f05;
+    padding: 0.4em 0.4em 0em 0.4em;
+    color: whitesmoke;
+}
+
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 95%;
+    max-width: 700px;
+}
+
+
+
+.espacamentoBottonH05 {
+    margin-bottom: .5em;
+}
+
+.espacamentoBottonH1 {
+    margin-bottom: 1em;
+}
+
+.espacamentoBottonH2 {
+    margin-bottom: 2em;
+}

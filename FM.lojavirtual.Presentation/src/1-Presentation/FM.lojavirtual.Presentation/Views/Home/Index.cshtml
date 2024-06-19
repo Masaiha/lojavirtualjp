@@ -5,7 +5,15 @@
 <link href="~/lib/nice-select.css" rel="stylesheet" />*@
 
 <script src="~/lib/mixitup.min.js"></script>
-<link href="~/css/veiculos/index.css?cache=@(DateTime.Now.Second)" rel="stylesheet" />
+
+<style>
+    #btn_adicionar {
+        display: flex;
+        flex-direction: column;
+        align-content: end;
+        margin-bottom: 1em;
+    }
+</style>
 
 <div class="row" style="display: flex;flex-direction: row;text-align: center;">
     @*<div class="hero__item set-bg" style="height: 431px;
@@ -27,42 +35,35 @@
     </section>
 
     <section class="featured spad">
-        <div class="container">
+        <div class="containfer">
             <div class="row mt-4">
-                <div class="col-lg-12" style="display: flex;flex-direction: column;background: #cdcdcd;padding: 1em;border-radius: 0.2em;">
-
+                <div class="col-lg-12" style="display: flex;flex-direction: column;">
                     <div class="featured__controls">
-                        <ul style="white-space">
-                            <li class="active" data-filter="*">Todos</li>
-                            <li data-filter=".mobi">Mobi</li>
-                            <li data-filter=".wagonR">Keyzinho</li>
-                            <li data-filter=".alphard">Alphard</li>
-                        </ul>
+                        <div class="container-tipos-veiculo"></div>
                     </div>
-
                 </div>
             </div>
+
 
             @*#################################*@
             @*Container de veículos disponíveis*@
             @*#################################*@
 
-            <div class="row featured__filter mt-3">
-                <div class="mix container-produtos"></div>
-                
-                
+            <div class="row" id="btn_adicionar">
+                <a class="btn btn-warning" onclick="javascript:AdicionarGet()"><i class="fa-solid fa-plus"></i> adicionar</a>
             </div>
+            <div class="row featured__filter container-produtos"> </div>
         </div>
     </section>
 </div>
 
 
 <script>
-    
+
     window.onload = function () {
         ListarVeiculos();
+        ListarTiposVeiculos();
     };
-
 
     function ListarVeiculos() {
 
@@ -76,6 +77,45 @@
             },
             error: function (recData) {
                 console.log(recData)
+            },
+            complete: function () {
+
+            }
+        });
+    }
+
+    function FiltrarVeiculos(idTipoVeiculo) {
+        
+        $.ajax({
+            type: "GET",
+            url: '@Url.Action("Filtrar", "Veiculo")',
+            data: { idTipoVeiculo },
+            success: function (recData) {
+
+                $('.container-produtos').html('');
+                $('.container-produtos').html(recData);
+            },
+            error: function (recData) {
+                console.log(recData)
+            },
+            complete: function () {
+
+            }
+        });
+    }
+
+    function ListarTiposVeiculos() {
+
+        $.ajax({
+            type: "GET",
+            url: '@Url.Action("ListarTiposVeiculo", "Veiculo")',
+            data: {},
+            success: function (recData) {
+
+                $('.container-tipos-veiculo').html(recData);
+            },
+            error: function (recData) {
+                console.log(recData);
             },
             complete: function () {
 

@@ -1,37 +1,74 @@
-﻿@model IEnumerable<FM.lojavirtual.Application.ViewModels.VeiculoViewModel>
-
+﻿@using System.Globalization;
+@model IEnumerable<FM.lojavirtual.Application.ViewModels.VeiculoViewModel>
+<link href="~/css/veiculos/index.css?cache=@(DateTime.Now.Second)" rel="stylesheet" />
 
 @foreach (var item in Model)
 {
-    <div class="featured__item" style="max-width: calc(66vh - 4em); padding: 1em;">
-        <div class="featured__item__pic set-bg">
-            <img src="~/imagens/produtos/fiat1.jpg" />
-        </div>
-        <div class="featured__item__text">
-            <div>
-                <div class="titulo_produto row" style="margin-bottom: 1em;">
-                    <h4 class="font-weight-bold">@item.Nome</h4>
+    <div class="mix wagonR">
+        <div class="featured__item">
+            <div class="featured__item__pic set-bg">
+                <img src="~/imagens/produtos/@(item.VeiculoImagemViewModel.Nome)" />
+            </div>
+            <div class="featured__item__text">
+                <div>
+                    <div class="titulo_produto row">
+                        <h4 class="font-weight-bold">@item.Nome</h4>
+                    </div>
+                    <div class="descricao_produto row">
+                        <span>@item.Descricao</span>
+                    </div>
                 </div>
-                <div class="descricao_produto row" style="margin-bottom: 1em;">
-                    <p>@item.Descricao</p>
+
+                <div class="container_dados_produto">
+                    <div style="justify-self: start;"> 	&yen; </div>
+                    <div class="row_descricao_generico">
+                        <i class="fa-solid fa-check"></i>
+                        <span class="font-weight-bold">@item.Valor.ToString("N", CultureInfo.CreateSpecificCulture("en-US")) </span>
+                    </div>
+
+                    <div style="justify-self: start;"> Modelo </div>
+                    <div class="row_descricao_generico">
+                        <i class="fa-solid fa-check"></i>
+                        <span class="modelo_produto__text">@item.Modelo</span>
+                    </div>
+
+                    <div style="justify-self: start;"> KM </div>
+                    <div class="km_produto row" style="">
+                        <div class="row_descricao_generico">
+                            <i class="fa-solid fa-check"></i>
+                            <span class="">@item.Kilometragem</span>
+                        </div>
+                    </div>
                 </div>
             </div>
 
-            <div class="preco_produto row" style="margin-bottom: .5em;">
-                <p class="font-weight-bold">R$ @item.Valor</p>
-            </div>
-            <div class="modelo_produto row" style="margin-bottom: .5em;">
-                <p class="modelo_produto__text">Modelo: @item.Modelo</p>
-            </div>
-            <div class="km_produto row" style="margin-bottom: .5em;">
-                <p class="">@item.Kilometragem km</p>
-            </div>
-            <div class="btn_produto row" style="margin-bottom: .5em;">
+            <div class="btn_produto row" style="">
                 <a class="btn btn-dark" href="#">Comprar</a>
             </div>
         </div>
     </div>
-
 }
 
-<a class="btn btn-warning"><i class="fa-solid fa-plus"></i> adicionar</a>
+<script>
+
+    function AdicionarGet() {
+        $.ajax({
+            type: "GET",
+            url: '@Url.Action("AdicionarGet", "Veiculo")',
+            data: {},
+            success: function (recData) {
+
+                $('#ModalFMContent').html(recData);
+                SetTitleModal('Teste Masanori');
+
+                $('#ModalFM').modal('show');
+
+            },
+            error: function (recData) {
+                console.log(recData);
+            },
+            complete: function () { }
+        });
+
+    }
+</script>

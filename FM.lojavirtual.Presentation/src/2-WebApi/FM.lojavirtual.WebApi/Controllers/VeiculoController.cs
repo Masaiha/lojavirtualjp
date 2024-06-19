@@ -7,7 +7,7 @@ using Microsoft.AspNetCore.Mvc;
 namespace FM.lojavirtual.WebApi.Controllers
 {
     [ApiController]
-    //[Authorize]
+    [Authorize]
     [Route("api/veiculo")]
     public class VeiculoController : ControllerBase
     {
@@ -26,8 +26,16 @@ namespace FM.lojavirtual.WebApi.Controllers
             return Ok(veiculos);
         }
 
+        [HttpGet("filtrar")]
+        public async Task<IActionResult> FiltrarVeiculos(int idTipoVeiculo)
+        {
+            var veiculos = await _appService.Listar(idTipoVeiculo);
 
-        [HttpPost]
+            return Ok(veiculos);
+        }
+
+
+        [HttpPost("adicionar")]
         public async Task<IActionResult> Adicionar(VeiculoViewModel veiculoViewModel, CancellationToken cancellationToken)
         {
             try

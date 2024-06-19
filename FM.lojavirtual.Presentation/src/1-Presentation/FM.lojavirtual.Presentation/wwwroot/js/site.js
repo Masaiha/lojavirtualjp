@@ -18,9 +18,11 @@
         });
         if ($('.featured__filter').length > 0) {
             var containerEl = document.querySelector('.featured__filter');
+
             var mixer = mixitup(containerEl);
         }
     });
+
 
 //    /*------------------
 //        Background Set

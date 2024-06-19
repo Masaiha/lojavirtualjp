@@ -2,6 +2,8 @@
 using _5._3_FM.lojavirtual.Infra.WebApi.Classes;
 using _5._3_FM.lojavirtual.Infra.WebApi.Interfaces;
 using _5._3_FM.lojavirtual.Infra.WebApi.Servicos;
+using FM.lojavirtual.Presentation.Helpers;
+using FM.lojavirtual.Presentation.Interfaces;
 using Microsoft.AspNetCore.Authentication.Cookies;
 
 namespace FM.lojavirtual.Presentation.Configurations
@@ -16,9 +18,15 @@ namespace FM.lojavirtual.Presentation.Configurations
 
 
             services.AddScoped<LojaServicoWebApi>();
+            services.AddScoped<ITiposVeiculoWebApi, TiposVeiculoWebApi>();
 
             services.AddScoped<IVeiculoWebApi, VeiculoWebApi>();
             services.AddScoped<ILoginWebApi, LoginWebApi>();
+            services.AddScoped<IUser, User>();
+
+
+
+
 
 
             services.AddSession(options =>

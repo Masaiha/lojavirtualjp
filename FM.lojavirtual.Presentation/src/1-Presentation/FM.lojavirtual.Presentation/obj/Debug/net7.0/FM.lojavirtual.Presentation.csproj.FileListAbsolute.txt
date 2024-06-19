@@ -276,3 +276,5 @@ C:\Users\Masa\Documents\1-Projetos\lojavirtualjp\FM.lojavirtual.Presentation\src
 C:\Users\Masa\Documents\1-Projetos\lojavirtualjp\FM.lojavirtual.Presentation\src\1-Presentation\FM.lojavirtual.Presentation\obj\Debug\net7.0\FM.lojavirtual.Presentation.pdb
 C:\Users\Masa\Documents\1-Projetos\lojavirtualjp\FM.lojavirtual.Presentation\src\1-Presentation\FM.lojavirtual.Presentation\obj\Debug\net7.0\FM.lojavirtual.Presentation.genruntimeconfig.cache
 C:\Users\Masa\Documents\1-Projetos\lojavirtualjp\FM.lojavirtual.Presentation\src\1-Presentation\FM.lojavirtual.Presentation\obj\Debug\net7.0\ref\FM.lojavirtual.Presentation.dll
+C:\Users\Masa\Documents\1-Projetos\lojavirtualjp\FM.lojavirtual.Presentation\src\1-Presentation\FM.lojavirtual.Presentation\bin\Debug\net7.0\AspNetCoreHero.ToastNotification.Views.dll
+C:\Users\Masa\Documents\1-Projetos\lojavirtualjp\FM.lojavirtual.Presentation\src\1-Presentation\FM.lojavirtual.Presentation\bin\Debug\net7.0\AspNetCoreHero.ToastNotification.dll

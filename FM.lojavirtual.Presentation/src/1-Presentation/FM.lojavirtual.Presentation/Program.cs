@@ -1,3 +1,5 @@
+using AspNetCoreHero.ToastNotification;
+using AspNetCoreHero.ToastNotification.Extensions;
 using FM.lojavirtual.Domain.Entidades.AppSettings;
 using FM.lojavirtual.Presentation.Configurations;
 using Microsoft.AspNetCore.Authentication.Cookies;
@@ -15,14 +17,15 @@ namespace FM.lojavirtual.Presentation
             // Add services to the container.
             builder.Services.AddControllersWithViews();
 
+            builder.Services.AddNotyf(config => { config.DurationInSeconds = 5; config.IsDismissable = true; config.Position = NotyfPosition.TopRight; });
             builder.Services.Configure<AppSettingsUi>(builder.Configuration);
             builder.Services.AddScoped<AppSettingsUi>();
 
             builder.Services.AddDependencyInjection();
 
             var app = builder.Build();
+            app.UseNotyf();
 
-           
 
             // Configure the HTTP request pipeline.
             if (!app.Environment.IsDevelopment())

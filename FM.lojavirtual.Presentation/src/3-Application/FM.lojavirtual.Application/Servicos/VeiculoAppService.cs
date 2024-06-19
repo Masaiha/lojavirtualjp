@@ -21,6 +21,11 @@ namespace FM.lojavirtual.Application.Servicos
         {
             return _mapper.Map<IEnumerable<VeiculoViewModel>>(await _service.Listar());
         }
+        
+        public async Task<IEnumerable<VeiculoViewModel>> Listar(int idTipoVeiculo)
+        {
+            return _mapper.Map<IEnumerable<VeiculoViewModel>>(await _service.Listar(idTipoVeiculo));
+        }
 
         public async Task Adicionar(VeiculoViewModel veiculoViewModel)
         {

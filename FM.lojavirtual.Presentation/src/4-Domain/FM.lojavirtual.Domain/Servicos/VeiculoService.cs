@@ -17,7 +17,12 @@ namespace FM.lojavirtual.Domain.Servicos
         {
             return await _repository.Listar();
         }
-        
+
+        public async Task<IEnumerable<Veiculo>> Listar(int idTipoVeiculo)
+        {
+            return await _repository.Listar(idTipoVeiculo);
+        }
+
         public async Task Adicionar(Veiculo veiculo)
         {
 
@@ -30,6 +35,5 @@ namespace FM.lojavirtual.Domain.Servicos
 
             return;
         }
-
     }
 }

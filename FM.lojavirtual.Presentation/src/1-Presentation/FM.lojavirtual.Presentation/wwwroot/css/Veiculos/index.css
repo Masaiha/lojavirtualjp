@@ -135,3 +135,43 @@
     display: grid;
     grid-template-columns: repeat(4, 25%)
 }
+
+
+
+
+.row_descricao_generico {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+}
+
+i {
+    margin-right: .5em;
+}
+
+.container_dados_produto {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.btn_produto {
+    display: flex;
+    justify-content: space-around;
+}
+
+.featured__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: .5em;
+    margin-bottom: 1em;
+}
+
+.descricao_produto {
+    min-height: 2em;
+}
+
+.titulo_produto {
+    color: #7d0b0b;
+    font-family: fantasy;
+}

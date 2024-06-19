@@ -18,10 +18,13 @@ namespace FM.lojavirtual.WebApi.Configurations
             services.AddScoped<IUsuarioAppService, UsuarioAppService>();
             services.AddScoped<ILoginAppService, LoginAppService>();
             services.AddScoped<IVeiculoAppService, VeiculoAppService>();
+            services.AddScoped<ITiposVeiculoAppService, TiposVeiculoAppService>();
+
 
             /////////////////////////////  pService //////////////////////////////////
             services.AddScoped<IUsuarioService, UsuarioService>();
             services.AddScoped<IVeiculoService, VeiculoService>();
+            services.AddScoped<ITiposVeiculoService, TiposVeiculoService>();
 
 
             ///////////////////////////  Repository //////////////////////////////////
@@ -29,6 +32,7 @@ namespace FM.lojavirtual.WebApi.Configurations
             services.AddScoped<ILojaRepository, LojaRepository>();
             services.AddScoped<ILoginRepository, LoginRepository>();
             services.AddScoped<IVeiculoRepository, VeiculoRepository>();
+            services.AddScoped<ITiposVeiculoRepository, TiposVeiculoRepository>();
 
 
 

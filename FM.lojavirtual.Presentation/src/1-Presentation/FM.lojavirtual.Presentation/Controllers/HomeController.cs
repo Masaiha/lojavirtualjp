@@ -1,6 +1,8 @@
 ﻿using _5._3_FM.lojavirtual.Infra.WebApi;
 using FM.lojavirtual.Application.AutoMapper;
 using FM.lojavirtual.Presentation.Extensions;
+using FM.lojavirtual.Presentation.Helpers;
+using FM.lojavirtual.Presentation.Interfaces;
 using FM.lojavirtual.Presentation.Models;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
@@ -12,17 +14,25 @@ namespace FM.lojavirtual.Presentation.Controllers
     {
         private readonly LojaServicoWebApi _lojaWebApi;
         private readonly IHttpContextAccessor _accessor;
+        private readonly IUser _user;
+        string _token;
 
-        public HomeController(LojaServicoWebApi lojaWebApi, IHttpContextAccessor accessor)
+        public HomeController(IUser user,
+                              LojaServicoWebApi lojaWebApi, 
+                              IHttpContextAccessor accessor)
         {
+            _user = user;
             _accessor = accessor;
             _lojaWebApi = lojaWebApi;
+
+            _token = _user.ObterUsuarioToken();
         }
 
         public async Task<IActionResult> Index(CancellationToken cancellationToken)
         {
             var teste1 = await _lojaWebApi.ListarNomeLojas(cancellationToken);
 
+            //var teste2 = _token;
             //var teste = ObterClaims();
             //var user = _accessor.HttpContext.User.GetUser();
 
