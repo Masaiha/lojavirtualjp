@@ -84,7 +84,7 @@
         });
     }
 
-    function FiltrarVeiculos(idTipoVeiculo) {
+    function FiltrarVeiculos(idTipoVeiculo, btnTipoVeiculo) {
         
         $.ajax({
             type: "GET",
@@ -94,6 +94,9 @@
 
                 $('.container-produtos').html('');
                 $('.container-produtos').html(recData);
+
+                $('.btn-filtro-veiculos').removeClass('active');
+                $(btnTipoVeiculo).addClass('active');
             },
             error: function (recData) {
                 console.log(recData)

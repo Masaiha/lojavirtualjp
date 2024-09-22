@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "GWbXp3oXErZqyZ5t7g6i8LhV8UCLFEklUNbpWjGauWM=",
+  "Hash": "7Vc+qFMD18cGHwQnViDqA5izkJtGmtsAA6AUqZf57Tc=",
   "Source": "FM.lojavirtual.Presentation",
   "BasePath": "_content/FM.lojavirtual.Presentation",
   "Mode": "Default",
@@ -1523,6 +1523,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Imagens\\Produtos\\mobi1.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\Masa\\Documents\\1-Projetos\\lojavirtualjp\\FM.lojavirtual.Presentation\\src\\1-Presentation\\FM.lojavirtual.Presentation\\wwwroot\\Imagens\\Produtos\\semimagem.jpeg",
+      "SourceId": "FM.lojavirtual.Presentation",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Masa\\Documents\\1-Projetos\\lojavirtualjp\\FM.lojavirtual.Presentation\\src\\1-Presentation\\FM.lojavirtual.Presentation\\wwwroot\\",
+      "BasePath": "_content/FM.lojavirtual.Presentation",
+      "RelativePath": "Imagens/Produtos/semimagem.jpeg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Imagens\\Produtos\\semimagem.jpeg"
     },
     {
       "Identity": "C:\\Users\\Masa\\Documents\\1-Projetos\\lojavirtualjp\\FM.lojavirtual.Presentation\\src\\1-Presentation\\FM.lojavirtual.Presentation\\wwwroot\\Imagens\\Produtos\\uno1.jpg",

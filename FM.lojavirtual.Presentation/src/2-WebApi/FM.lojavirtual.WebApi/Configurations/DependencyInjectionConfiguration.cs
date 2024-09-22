@@ -33,7 +33,7 @@ namespace FM.lojavirtual.WebApi.Configurations
             services.AddScoped<ILoginRepository, LoginRepository>();
             services.AddScoped<IVeiculoRepository, VeiculoRepository>();
             services.AddScoped<ITiposVeiculoRepository, TiposVeiculoRepository>();
-
+            services.AddScoped<IVeiculoImagemRepository, VeiculoImagemRepository>();
 
 
             return services;

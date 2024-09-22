@@ -62,8 +62,24 @@ namespace FM.lojavirtual.Presentation.Controllers
 
 
         [HttpPost]
-        public async Task<IActionResult> Adicionar(VeiculoViewModel veiculoViewModel, CancellationToken cancellationToken)
+        public async Task<IActionResult> AdicionarPost(VeiculoViewModel veiculoViewModel, CancellationToken cancellationToken)
         {
+            veiculoViewModel.TiposVeiculoViewModel.Nome = "key";
+            veiculoViewModel.TiposVeiculoViewModel.DataCriacao =  DateTime.UtcNow;
+
+            veiculoViewModel.VeiculoImagemViewModel.Nome = "sdfsdfsdfsd";
+            veiculoViewModel.VeiculoImagemViewModel.DataCriacao = DateTime.UtcNow;
+
+            veiculoViewModel.TiposVeiculoViewModel.Id = 1;
+            veiculoViewModel.TiposVeiculoViewModel.Nome = "Wagon R";
+
+            veiculoViewModel.VeiculoImagemViewModel.Id = 2;
+            veiculoViewModel.VeiculoImagemViewModel.Nome = "fiat1.jpg";
+            veiculoViewModel.VeiculoImagemViewModel.Tipo = "jpg";
+            veiculoViewModel.VeiculoImagemViewModel.DataCriacao = DateTime.UtcNow;
+
+
+
             await _webApi.Adicionar(veiculoViewModel, _token, cancellationToken);
 
             return Ok();

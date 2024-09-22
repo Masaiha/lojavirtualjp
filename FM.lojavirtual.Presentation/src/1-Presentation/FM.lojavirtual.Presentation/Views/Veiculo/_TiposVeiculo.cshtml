@@ -2,9 +2,9 @@
 
 
 <ul style="white-space">
-<li class="active" onclick="javascript: ListarVeiculos()">Todos</li>
+    <li class="active btn-filtro-veiculos" onclick="javascript: ListarVeiculos()">Todos</li>
 @foreach (var item in Model)
 {
-        <li onclick="javascript: FiltrarVeiculos(@item.Id)">@item.Nome</li>
+        <li class="btn-filtro-veiculos" onclick="javascript: FiltrarVeiculos(@item.Id, this)">@item.Nome</li>
 }
 </ul>
