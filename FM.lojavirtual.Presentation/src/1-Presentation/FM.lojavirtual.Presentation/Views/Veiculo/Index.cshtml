@@ -67,8 +67,54 @@
             error: function (recData) {
                 console.log(recData);
             },
-            complete: function () { }
-        });
+            complete: function () {
 
+            }
+        });
+    }
+
+    var VeiculoViewModel = {
+        'Nome': '',
+        'AnoFabricacao': 2024,
+        'Modelo': '',
+        'Kilometragem': 0,
+        'Descricao': '',
+        'Valor': 0
+        }
+
+    function AdicionarVeiculoPost() {
+        VeiculoViewModel = {
+            'Nome': $('#Nome').val(),
+            'AnoFabricacao': $('#AnoFabricacao').val(),
+            'Modelo': $('#Modelo').val(),
+            'Kilometragem': $('#Kilometragem').val(),
+            'Descricao': $('#Descricao').val(),
+            'Valor': $('#Valor').val()
+        };
+
+        $.post("@Url.Action("AdicionarPost", "Veiculo")", {
+            VeiculoViewModel
+
+        }, function (result) {            
+            ListarVeiculos();
+            $('#ModalFM').modal('hide');
+        })
+    }
+
+    function ListarVeiculos() {
+        $.ajax({
+            type: "GET",
+            url: '@Url.Action("ListarVeiculos", "Veiculo")',
+            data: {},
+            success: function (recData) {
+                $('.container-produtos').html(recData);
+            },
+            error: function (recData) {
+                console.log(recData)
+            },
+            complete: function () {
+
+            }
+        });
     }
 </script>

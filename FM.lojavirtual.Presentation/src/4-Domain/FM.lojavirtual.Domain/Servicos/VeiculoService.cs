@@ -7,10 +7,12 @@ namespace FM.lojavirtual.Domain.Servicos
     public class VeiculoService : IVeiculoService
     {
         private readonly IVeiculoRepository _repository;
+        private readonly IVeiculoImagemRepository _imagemRepository;
 
-        public VeiculoService(IVeiculoRepository repository)
+        public VeiculoService(IVeiculoRepository repository, IVeiculoImagemRepository imagemRepository)
         {
             _repository = repository;
+            _imagemRepository = imagemRepository;
         }
 
         public async Task<IEnumerable<Veiculo>> Listar()
@@ -32,6 +34,8 @@ namespace FM.lojavirtual.Domain.Servicos
                 throw new Exception("Preencha os dados do veículo corretamente.");
 
             await _repository.Adicionar(veiculo);
+
+            await _imagemRepository.AdicionarSemImagemEmUltimoVeiculoAdd();
 
             return;
         }

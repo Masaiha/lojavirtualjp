@@ -1,6 +1,6 @@
 ﻿@model FM.lojavirtual.Application.ViewModels.VeiculoViewModel
 
-<form asp-action="AdicionarPost" asp-controller="Veiculo" method="post">
+<form>
     <div asp-validation-summary="ModelOnly" class="text-danger"></div>
 
     <div class="form-group espacamentoBottonH1">
@@ -36,14 +36,13 @@
     <hr />
     <div class="form-group">
         <a class="btn btn-warning" onclick="javascript:$('#ModalFM').modal('hide');">Cancelar</a>
-        <input type="submit" value="Salvar" class="btn btn-primary" />
+        <a class="btn btn-primary" onclick="AdicionarVeiculoPost();">Salvar</a>
+        
     </div>
 </form>
 
 
 @section Scripts {
     @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
-
-    
 
 }

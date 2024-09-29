@@ -16,13 +16,16 @@ namespace FM.lojavirtual.Presentation.Controllers
         private readonly ITiposVeiculoWebApi _tiposVeiculoWebApi;
         private readonly INotyfService _notyfService;
 
-        public VeiculoController(IVeiculoWebApi webApi, IUser user, ITiposVeiculoWebApi tiposVeiculoWebApi, INotyfService notyfService)
+        public VeiculoController(IVeiculoWebApi webApi, 
+                                 IUser user,
+                                 INotyfService notyfService,
+                                 ITiposVeiculoWebApi tiposVeiculoWebApi)
         {
-            _webApi = webApi;
             _user = user;
+            _webApi = webApi;
+            _notyfService = notyfService;
             _token = _user.ObterUsuarioToken();
             _tiposVeiculoWebApi = tiposVeiculoWebApi;
-            _notyfService = notyfService;
         }
 
         public ActionResult Index()
@@ -64,11 +67,11 @@ namespace FM.lojavirtual.Presentation.Controllers
         [HttpPost]
         public async Task<IActionResult> AdicionarPost(VeiculoViewModel veiculoViewModel, CancellationToken cancellationToken)
         {
-            veiculoViewModel.TiposVeiculoViewModel.Nome = "key";
-            veiculoViewModel.TiposVeiculoViewModel.DataCriacao =  DateTime.UtcNow;
+            //veiculoViewModel.TiposVeiculoViewModel.Nome = "key";
+            //veiculoViewModel.TiposVeiculoViewModel.DataCriacao =  DateTime.UtcNow;
 
-            veiculoViewModel.VeiculoImagemViewModel.Nome = "sdfsdfsdfsd";
-            veiculoViewModel.VeiculoImagemViewModel.DataCriacao = DateTime.UtcNow;
+            //veiculoViewModel.VeiculoImagemViewModel.Nome = "sdfsdfsdfsd";
+            //veiculoViewModel.VeiculoImagemViewModel.DataCriacao = DateTime.UtcNow;
 
             veiculoViewModel.TiposVeiculoViewModel.Id = 1;
             veiculoViewModel.TiposVeiculoViewModel.Nome = "Wagon R";
@@ -78,11 +81,9 @@ namespace FM.lojavirtual.Presentation.Controllers
             veiculoViewModel.VeiculoImagemViewModel.Tipo = "jpg";
             veiculoViewModel.VeiculoImagemViewModel.DataCriacao = DateTime.UtcNow;
 
-
-
             await _webApi.Adicionar(veiculoViewModel, _token, cancellationToken);
 
-            return Ok();
+            return Json(new { });
         }
 
         [HttpGet]

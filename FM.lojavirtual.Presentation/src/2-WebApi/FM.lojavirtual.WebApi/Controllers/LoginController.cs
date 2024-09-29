@@ -1,12 +1,10 @@
 ﻿using FM.lojavirtual.Application.Interfaces;
 using FM.lojavirtual.Application.ViewModels;
 using FM.lojavirtual.Domain.Entidades.AppSettings;
-using FM.lojavirtual.Domain.Interfaces.Repository;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Options;
 using Microsoft.IdentityModel.Tokens;
 using System.IdentityModel.Tokens.Jwt;
-using System.Runtime.CompilerServices;
 using System.Security.Claims;
 
 namespace FM.lojavirtual.WebApi.Controllers
@@ -38,7 +36,7 @@ namespace FM.lojavirtual.WebApi.Controllers
                     return Ok(usuario);
                 }
 
-                return BadRequest();
+                return NoContent();
             }
             catch (Exception ex)
             {

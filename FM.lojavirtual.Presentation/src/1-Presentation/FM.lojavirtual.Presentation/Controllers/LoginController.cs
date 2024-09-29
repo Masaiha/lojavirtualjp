@@ -1,5 +1,6 @@
 ﻿using _5._3_FM.lojavirtual.Infra.WebApi.Interfaces;
 using _5._3_FM.lojavirtual.Infra.WebApi.Utilitarios;
+using AspNetCoreHero.ToastNotification.Abstractions;
 using FM.lojavirtual.Application.ViewModels;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authentication.Cookies;
@@ -13,11 +14,13 @@ namespace FM.lojavirtual.Presentation.Controllers
     {
         private readonly IHttpContextAccessor _accessor;
         private readonly ILoginWebApi _loginWebApi;
+        private readonly INotyfService _notyfService;
 
-        public LoginController(ILoginWebApi loginWebApi, IHttpContextAccessor accessor)
+        public LoginController(ILoginWebApi loginWebApi, IHttpContextAccessor accessor, INotyfService notyfService)
         {
             _loginWebApi = loginWebApi;
             _accessor = accessor;
+            _notyfService = notyfService;
         }
 
         public IActionResult Index()
@@ -30,6 +33,12 @@ namespace FM.lojavirtual.Presentation.Controllers
         public async Task<IActionResult> Logar(UsuarioViewModel usuario, CancellationToken cancellationToken)
         {
             var usuarioLogado = await _loginWebApi.Logar(usuario, cancellationToken);
+
+            if(usuarioLogado == null) 
+            {
+                return RedirectToAction("Index", new RouteValueDictionary(
+                    new { controller = "Login", action = "Index" }));
+            }
 
             await SetCookie(usuario, PersistToken._token.Value, "1");
 

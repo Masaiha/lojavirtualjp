@@ -18,7 +18,6 @@ namespace FM.lojavirtual.WebApi.Controllers
         [HttpGet("listar-tipos-veiculo")]
         public async Task<IActionResult> Listar()
         {
-
             try
             {
                 var tipos = await _appService.Listar();
