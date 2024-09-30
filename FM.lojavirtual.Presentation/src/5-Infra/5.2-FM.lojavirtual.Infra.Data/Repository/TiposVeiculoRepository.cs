@@ -22,5 +22,22 @@ namespace _5._2_FM.lojavirtual.Infra.Data.Repository
 
             return tiposVeiculo;
         }
+
+        public async Task<TiposVeiculo> ObterPorId(int id)
+        {
+            var cn = OpenConnectionDb();
+
+            const string sql = @"SET ARITHABORT ON
+                                     SELECT Id,
+	                                        Nome
+                                       FROM TiposVeiculo WITH (NOLOCK) 
+                                      WHERE Id = @id";
+
+            var tiposVeiculo = await cn.QueryAsync<TiposVeiculo>(sql, new { 
+                id = id
+            });
+
+            return tiposVeiculo.FirstOrDefault();
+        }
     }
 }

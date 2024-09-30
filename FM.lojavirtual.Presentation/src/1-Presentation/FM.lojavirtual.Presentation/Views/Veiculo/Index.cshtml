@@ -63,6 +63,7 @@
 
                 $('#ModalFM').modal('show');
 
+                GetDropDownListTiposVeiculo();
             },
             error: function (recData) {
                 console.log(recData);
@@ -73,13 +74,25 @@
         });
     }
 
+    function GetDropDownListTiposVeiculo() {
+        $.ajax({
+            type: "GET",
+            url: '@Url.Action("Coco", "TiposVeiculoWeb")',
+            data: {},
+            success: function (data) {
+                $("#testeMasa").html(data);
+            }
+        });
+    }
+
     var VeiculoViewModel = {
         'Nome': '',
         'AnoFabricacao': 2024,
         'Modelo': '',
         'Kilometragem': 0,
         'Descricao': '',
-        'Valor': 0
+        'Valor': 0,
+        'TiposVeiculoViewModel.Id': 0
         }
 
     function AdicionarVeiculoPost() {
@@ -89,7 +102,8 @@
             'Modelo': $('#Modelo').val(),
             'Kilometragem': $('#Kilometragem').val(),
             'Descricao': $('#Descricao').val(),
-            'Valor': $('#Valor').val()
+            'Valor': $('#Valor').val(),
+            'TiposVeiculoViewModel.Id': $('#TiposVeiculo').val()
         };
 
         $.post("@Url.Action("AdicionarPost", "Veiculo")", {
@@ -101,7 +115,7 @@
         })
     }
 
-    function ListarVeiculos() {
+    function ListarVeiculos() { 
         $.ajax({
             type: "GET",
             url: '@Url.Action("ListarVeiculos", "Veiculo")',

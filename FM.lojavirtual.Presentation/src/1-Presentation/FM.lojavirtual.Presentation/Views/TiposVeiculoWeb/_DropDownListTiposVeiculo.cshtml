@@ -1,0 +1,11 @@
+﻿@using FM.lojavirtual.Application.ViewModels
+
+@*@model SelectListItem<FM.lojavirtual.Application.ViewModels.TiposVeiculoViewModel>;*@
+
+<div>
+    @Html.DropDownList("TiposVeiculo", 
+                        ViewBag.TiposVeiculo, 
+                        "Selecione", 
+                        new { @class = "form-control form-control-sm selectpicker" }
+                      )
+</div>

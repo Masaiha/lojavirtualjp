@@ -28,8 +28,21 @@ namespace FM.lojavirtual.WebApi.Controllers
             {
                 return BadRequest(ex.Message);
             }
-            
         }
 
+        [HttpGet("obter-por-id")]
+        public async Task<IActionResult> ObterPorId(int id)
+        {
+            try
+            {
+                var tipo = await _appService.ObterPorID(id);
+
+                return Ok(tipo);
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
+        }
     }
 }

@@ -62,7 +62,7 @@
 
     window.onload = function () {
         ListarVeiculos();
-        ListarTiposVeiculos();
+        //ListarTiposVeiculos();
     };
 
     function ListarVeiculos() {
@@ -107,22 +107,22 @@
         });
     }
 
-    function ListarTiposVeiculos() {
+    //function ListarTiposVeiculos() {
 
-        $.ajax({
-            type: "GET",
-            url: '@Url.Action("ListarTiposVeiculo", "Veiculo")',
-            data: {},
-            success: function (recData) {
+    //    $.ajax({
+    //        type: "GET",
+    //        url: '@Url.Action("ListarTiposVeiculo", "Veiculo")',
+    //        data: {},
+    //        success: function (recData) {
 
-                $('.container-tipos-veiculo').html(recData);
-            },
-            error: function (recData) {
-                console.log(recData);
-            },
-            complete: function () {
+    //            $('.container-tipos-veiculo').html(recData);
+    //        },
+    //        error: function (recData) {
+    //            console.log(recData);
+    //        },
+    //        complete: function () {
 
-            }
-        });
-    }
+    //        }
+    //    });
+    //}
 </script>

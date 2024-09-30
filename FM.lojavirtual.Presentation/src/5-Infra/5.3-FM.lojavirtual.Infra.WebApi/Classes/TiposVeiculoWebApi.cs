@@ -18,8 +18,20 @@ namespace _5._3_FM.lojavirtual.Infra.WebApi.Classes
 
         public async Task<IEnumerable<TiposVeiculoViewModel>> Listar(string token, CancellationToken cancellationToken)
         {
-            return await _genericCall.CallMethod<IEnumerable<TiposVeiculoViewModel>>(HttpMethod.Get, _appSettingsUi.TiposVeiculoWebApi,
-                                                                   cancellationToken,null, null, token);
+            return await _genericCall.CallMethod<IEnumerable<TiposVeiculoViewModel>>(HttpMethod.Get, 
+                                                                                     _appSettingsUi.TiposVeiculoWebApi,
+                                                                                     cancellationToken,null, null, token);
+        }
+        
+        public async Task<TiposVeiculoViewModel> ObterPorId(int id, string token, CancellationToken cancellationToken)
+        {
+            return await _genericCall.CallMethod<TiposVeiculoViewModel>(HttpMethod.Get, 
+                                                                        _appSettingsUi.TipoVeiculoWebApi,
+                                                                        cancellationToken,
+                                                                        new Dictionary<string, object>()
+                                                                        {
+                                                                            { "id", id }
+                                                                        }, null, token);
         }
 
     }

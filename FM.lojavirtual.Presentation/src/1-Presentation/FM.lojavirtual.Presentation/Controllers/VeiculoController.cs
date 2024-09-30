@@ -16,8 +16,8 @@ namespace FM.lojavirtual.Presentation.Controllers
         private readonly ITiposVeiculoWebApi _tiposVeiculoWebApi;
         private readonly INotyfService _notyfService;
 
-        public VeiculoController(IVeiculoWebApi webApi, 
-                                 IUser user,
+        public VeiculoController(IUser user,
+                                 IVeiculoWebApi webApi,
                                  INotyfService notyfService,
                                  ITiposVeiculoWebApi tiposVeiculoWebApi)
         {
@@ -58,8 +58,10 @@ namespace FM.lojavirtual.Presentation.Controllers
         }
 
         [HttpGet]
-        public IActionResult AdicionarGet()
+        public IActionResult AdicionarGet(CancellationToken cancellationToken)
         {
+            var tipos = _tiposVeiculoWebApi.Listar(_token, cancellationToken);
+
             return PartialView("_Adicionar");
         }
 
@@ -73,8 +75,10 @@ namespace FM.lojavirtual.Presentation.Controllers
             //veiculoViewModel.VeiculoImagemViewModel.Nome = "sdfsdfsdfsd";
             //veiculoViewModel.VeiculoImagemViewModel.DataCriacao = DateTime.UtcNow;
 
-            veiculoViewModel.TiposVeiculoViewModel.Id = 1;
-            veiculoViewModel.TiposVeiculoViewModel.Nome = "Wagon R";
+            var TipoVeiculo = await ObterTipoVeiculo(veiculoViewModel.TiposVeiculoViewModel.Id, cancellationToken);
+
+            veiculoViewModel.TiposVeiculoViewModel.Id = TipoVeiculo.Id;
+            veiculoViewModel.TiposVeiculoViewModel.Nome = TipoVeiculo.Nome;
 
             veiculoViewModel.VeiculoImagemViewModel.Id = 2;
             veiculoViewModel.VeiculoImagemViewModel.Nome = "fiat1.jpg";
@@ -92,6 +96,14 @@ namespace FM.lojavirtual.Presentation.Controllers
             var tiposVeiculo = await _tiposVeiculoWebApi.Listar(_token, cancellationToken);
 
             return PartialView("_TiposVeiculo", tiposVeiculo);
+        }
+
+        public async Task<TiposVeiculoViewModel> ObterTipoVeiculo(int id, CancellationToken cancellationToken)
+        {
+            var tipoVeiculo = await _tiposVeiculoWebApi.ObterPorId(id, _token, cancellationToken);
+
+            return tipoVeiculo;
+            
         }
     }
 }

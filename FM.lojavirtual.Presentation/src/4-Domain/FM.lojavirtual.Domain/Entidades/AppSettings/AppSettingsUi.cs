@@ -9,6 +9,7 @@
         public string VeiculoListar { get; set; }
         public string VeiculoAdicionar { get; set; }
         public string TiposVeiculoWebApi { get; set; }
+        public string TipoVeiculoWebApi { get; set; }
         public string FiltarVeiculos { get; set; }
     }
 }

@@ -92,19 +92,20 @@ namespace _5._2_FM.lojavirtual.Infra.Data.Repository
         {
             var cn = OpenConnectionDb();
 
-            string sql = $@"INSERT INTO Veiculos  (IdTipoVeiculo, Nome, 
-                                                        AnoFabricacao, 
-                                                        Modelo, 
-                                                        Kilometragem, 
-                                                        Descricao, 
-                                                        Valor)
-                                                VALUES (1,
-                                                        '{veiculo.Nome}', 
-                                                         {veiculo.AnoFabricacao}, 
-                                                         {veiculo.Modelo}, 
-                                                         {veiculo.Kilometragem}, 
-                                                        '{veiculo.Descricao}', 
-                                                         {veiculo.ObterValorVeiculoModeloBancoDados()}); ";
+            string sql = $@"INSERT INTO Veiculos  (IdTipoVeiculo, 
+                                                   Nome, 
+                                                   AnoFabricacao, 
+                                                   Modelo, 
+                                                   Kilometragem, 
+                                                   Descricao, 
+                                                   Valor)
+                                            VALUES (1,
+                                                 '{veiculo.Nome}', 
+                                                  {veiculo.AnoFabricacao}, 
+                                                  {veiculo.Modelo}, 
+                                                  {veiculo.Kilometragem}, 
+                                                 '{veiculo.Descricao}', 
+                                                  {veiculo.ObterValorVeiculoModeloBancoDados()}); ";
 
             await cn.QueryAsync(sql);
 

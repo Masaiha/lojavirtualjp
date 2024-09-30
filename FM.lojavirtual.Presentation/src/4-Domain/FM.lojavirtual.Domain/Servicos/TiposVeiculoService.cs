@@ -17,5 +17,10 @@ namespace FM.lojavirtual.Domain.Servicos
         {
             return await _repository.Listar();
         }
+
+        public async Task<TiposVeiculo> ObterPorId(int id)
+        {
+            return await _repository.ObterPorId(id);
+        }
     }
 }
