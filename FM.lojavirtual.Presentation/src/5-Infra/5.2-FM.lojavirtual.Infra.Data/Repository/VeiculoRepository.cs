@@ -15,12 +15,13 @@ namespace _5._2_FM.lojavirtual.Infra.Data.Repository
             var cn = OpenConnectionDb();
 
             const string sql = @"SET ARITHABORT ON
-                                     select v.Nome,
+                                     select v.Id,
+                                            v.Nome,
 	                                        AnoFabricacao,
 	                                        Modelo, Kilometragem,
 	                                        Descricao,
 	                                        Valor,
-	                                        vi.Id As IdImagem,
+	                                        vi.Id As IdVeiculoImagem,
 	                                        vi.Nome As Nome,
 	                                        vi.Tipo,
                                             tv.Id As IdTiposVeiculo,
@@ -42,7 +43,7 @@ namespace _5._2_FM.lojavirtual.Infra.Data.Repository
                         return veiculo;
                     },
                 null,
-                splitOn: "IdImagem, IdTiposVeiculo",
+                splitOn: "IdVeiculoImagem, IdTiposVeiculo",
                 transaction: null);
 
 
@@ -54,7 +55,8 @@ namespace _5._2_FM.lojavirtual.Infra.Data.Repository
             var cn = OpenConnectionDb();
 
             string sql = $@"SET ARITHABORT ON
-                                     SELECT v.Nome,
+                                     SELECT v.Id,
+                                            v.Nome,
 	                                        AnoFabricacao,
 	                                        Modelo, Kilometragem,
 	                                        Descricao,
@@ -83,7 +85,6 @@ namespace _5._2_FM.lojavirtual.Infra.Data.Repository
                 null,
                 splitOn: "IdImagem, IdTiposVeiculo",
                 transaction: null);
-
 
             return veiculos;
         }

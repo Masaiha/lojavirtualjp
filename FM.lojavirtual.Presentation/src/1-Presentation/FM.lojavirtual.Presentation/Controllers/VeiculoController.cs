@@ -69,20 +69,13 @@ namespace FM.lojavirtual.Presentation.Controllers
         [HttpPost]
         public async Task<IActionResult> AdicionarPost(VeiculoViewModel veiculoViewModel, CancellationToken cancellationToken)
         {
-            //veiculoViewModel.TiposVeiculoViewModel.Nome = "key";
-            //veiculoViewModel.TiposVeiculoViewModel.DataCriacao =  DateTime.UtcNow;
-
-            //veiculoViewModel.VeiculoImagemViewModel.Nome = "sdfsdfsdfsd";
-            //veiculoViewModel.VeiculoImagemViewModel.DataCriacao = DateTime.UtcNow;
-
             var TipoVeiculo = await ObterTipoVeiculo(veiculoViewModel.TiposVeiculoViewModel.Id, cancellationToken);
 
             veiculoViewModel.TiposVeiculoViewModel.Id = TipoVeiculo.Id;
             veiculoViewModel.TiposVeiculoViewModel.Nome = TipoVeiculo.Nome;
 
-            veiculoViewModel.VeiculoImagemViewModel.Id = 2;
-            veiculoViewModel.VeiculoImagemViewModel.Nome = "fiat1.jpg";
-            veiculoViewModel.VeiculoImagemViewModel.Tipo = "jpg";
+            veiculoViewModel.VeiculoImagemViewModel.Nome = "semimagem.jpeg";
+            veiculoViewModel.VeiculoImagemViewModel.Tipo = "jpeg";
             veiculoViewModel.VeiculoImagemViewModel.DataCriacao = DateTime.UtcNow;
 
             await _webApi.Adicionar(veiculoViewModel, _token, cancellationToken);
@@ -104,6 +97,12 @@ namespace FM.lojavirtual.Presentation.Controllers
 
             return tipoVeiculo;
             
+        }
+
+        [HttpGet]
+        public IActionResult AdicionarImagemVeiculo()
+        {
+            return PartialView("_AdicionarImagemVeiculo");
         }
     }
 }

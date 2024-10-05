@@ -7,7 +7,10 @@
     <div class="mix wagonR">
         <div class="featured__item">
             <div class="featured__item__pic set-bg">
-                <img src="~/imagens/produtos/@(item.VeiculoImagemViewModel.Nome)" />
+                <img src="~/imagens/produtos/@(item.VeiculoImagemViewModel.Nome)" onclick="AdicionarImagem(
+                                                                                                            @item.Id,
+                                                                                                            @item.VeiculoImagemViewModel.IdVeiculoImagem)" 
+                />
             </div>
             <div class="featured__item__text">
                 <div>
@@ -125,6 +128,27 @@
             },
             error: function (recData) {
                 console.log(recData)
+            },
+            complete: function () {
+
+            }
+        });
+    }
+
+    function AdicionarImagem(idVeiculo, idVeiculoImagem) {
+        $.ajax({
+            type: "GET",
+            url: '@Url.Action("AdicionarImagemVeiculo", "Veiculo")',
+            data: {},
+            success: function (recData) {
+
+                $('#ModalFMContent').html(recData);
+
+                $('#ModalFM').modal('show');
+
+            },
+            error: function (recData) {
+                console.log(recData);
             },
             complete: function () {
 
